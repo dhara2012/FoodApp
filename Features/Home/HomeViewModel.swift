@@ -8,35 +8,55 @@
 import Foundation
 import Combine
 
+struct FoodCategory: Identifiable, Hashable {
+    let name: String
+    let emoji: String
+    var id: String { name }
+}
+
+struct PopularSelection: Identifiable {
+    let item: MenuItem
+    let restaurant: Restaurant
+    var id: Int { item.id }
+}
+
 @MainActor
 final class HomeViewModel: ObservableObject {
     enum State: Equatable { case loading, content, empty, failure(String) }
 
     @Published private(set) var restaurants: [Restaurant] = []
+    @Published private(set) var popularItems: [MenuItem] = []
     @Published private(set) var state: State = .loading
     @Published private(set) var isLoadingMore = false
     @Published var searchText = ""
     @Published private(set) var category: String?
     @Published private(set) var sort: RestaurantSort = .none
+    @Published var popularSelection: PopularSelection?
 
-    let categories = ["Pizza", "Biryani", "Burger"]
+    let categories = [FoodCategory(name: "Pizza", emoji: "🍕"), FoodCategory(name: "Biryani", emoji: "🍛"),
+                      FoodCategory(name: "Burger", emoji: "🍔"), FoodCategory(name: "Chinese", emoji: "🥡"),
+                      FoodCategory(name: "South Indian", emoji: "🥞"), FoodCategory(name: "Desserts", emoji: "🍰"),
+                      FoodCategory(name: "Healthy", emoji: "🥗"), FoodCategory(name: "Rolls", emoji: "🌯")]
 
     private let repository: HomeRepositoryProtocol
-    private let pageSize = 10          // pagination test માટે થોડીવાર 2 કરો
+    private let pageSize = 10
     private var page = 1
     private var hasMore = true
-    private var requestID = 0          // જૂના (stale) response ને ignore કરવા
+    private var requestID = 0
     private var cancellables = Set<AnyCancellable>()
 
     init(repository: HomeRepositoryProtocol) {
         self.repository = repository
-        // Search debounce: ટાઈપ બંધ થયાના 0.4 સેકન્ડ પછી જ API call
         $searchText
             .dropFirst()
             .debounce(for: .milliseconds(400), scheduler: DispatchQueue.main)
             .removeDuplicates()
             .sink { [weak self] _ in Task { await self?.reload() } }
             .store(in: &cancellables)
+    }
+
+    var isFiltering: Bool {
+        category != nil || !searchText.trimmingCharacters(in: .whitespaces).isEmpty
     }
 
     func reload(showSpinner: Bool = true) async {
@@ -68,9 +88,16 @@ final class HomeViewModel: ObservableObject {
             page += 1
             restaurants += next
             hasMore = next.count == pageSize
-        } catch {
-            // શાંતિથી ignore: યુઝર ફરી scroll કરશે તો retry થશે
-        }
+        } catch { /* શાંતિથી ignore; ફરી scroll કરતાં retry થશે */ }
+    }
+
+    func loadPopular() async {
+        popularItems = (try? await repository.popularItems()) ?? popularItems
+    }
+
+    func openPopular(_ item: MenuItem) async {
+        guard let restaurant = try? await repository.restaurant(id: item.restaurantId) else { return }
+        popularSelection = PopularSelection(item: item, restaurant: restaurant)
     }
 
     func toggleCategory(_ name: String) async {

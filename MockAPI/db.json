@@ -1,12 +1,4876 @@
 {
-  "restaurants": [
-    {"id":1,"name":"Pizza Palace","image_url":null,"rating":4.4,"delivery_time_min":30,"delivery_fee":40,"distance_km":2.1,"cuisine":"Pizza"},
-    {"id":2,"name":"Biryani House","image_url":null,"rating":4.2,"delivery_time_min":40,"delivery_fee":30,"distance_km":3.5,"cuisine":"Biryani"},
-    {"id":3,"name":"Burger Barn","image_url":null,"rating":4.0,"delivery_time_min":25,"delivery_fee":25,"distance_km":1.4,"cuisine":"Burger"}
-  ],
-  "menu": [
-    {"id":1,"restaurant_id":1,"name":"Margherita","description":"Classic cheese pizza","price":200,"is_veg":true,"image_url":null},
-    {"id":2,"restaurant_id":1,"name":"Chicken Pizza","description":"Spicy chicken","price":280,"is_veg":false,"image_url":null}
-  ],
-  "orders": []
+ "restaurants": [
+  {
+   "id": 1,
+   "name": "Pizza Palace",
+   "image_url": null,
+   "emoji": "🍕",
+   "rating": 4.5,
+   "delivery_time_min": 25,
+   "delivery_fee": 20,
+   "distance_km": 2.1,
+   "cuisine": "Pizza",
+   "offer": "Free delivery"
+  },
+  {
+   "id": 2,
+   "name": "Biryani House",
+   "image_url": null,
+   "emoji": "🍛",
+   "rating": 4.1,
+   "delivery_time_min": 30,
+   "delivery_fee": 30,
+   "distance_km": 3.4,
+   "cuisine": "Biryani",
+   "offer": "20% OFF"
+  },
+  {
+   "id": 3,
+   "name": "Burger Barn",
+   "image_url": null,
+   "emoji": "🍔",
+   "rating": 4.8,
+   "delivery_time_min": 35,
+   "delivery_fee": 40,
+   "distance_km": 4.7,
+   "cuisine": "Burger",
+   "offer": "Flat ₹50 OFF"
+  },
+  {
+   "id": 4,
+   "name": "Wok Express",
+   "image_url": null,
+   "emoji": "🥡",
+   "rating": 4.4,
+   "delivery_time_min": 40,
+   "delivery_fee": 25,
+   "distance_km": 2.0,
+   "cuisine": "Chinese",
+   "offer": null
+  },
+  {
+   "id": 5,
+   "name": "Dosa Corner",
+   "image_url": null,
+   "emoji": "🥞",
+   "rating": 4.0,
+   "delivery_time_min": 20,
+   "delivery_fee": 0,
+   "distance_km": 3.3,
+   "cuisine": "South Indian",
+   "offer": "30% OFF up to ₹75"
+  },
+  {
+   "id": 6,
+   "name": "Sweet Tooth",
+   "image_url": null,
+   "emoji": "🍰",
+   "rating": 4.7,
+   "delivery_time_min": 25,
+   "delivery_fee": 20,
+   "distance_km": 4.6,
+   "cuisine": "Desserts",
+   "offer": "50% OFF up to ₹100"
+  },
+  {
+   "id": 7,
+   "name": "Green Bowl",
+   "image_url": null,
+   "emoji": "🥗",
+   "rating": 4.3,
+   "delivery_time_min": 30,
+   "delivery_fee": 30,
+   "distance_km": 1.9,
+   "cuisine": "Healthy",
+   "offer": "Free delivery"
+  },
+  {
+   "id": 8,
+   "name": "Roll Express",
+   "image_url": null,
+   "emoji": "🌯",
+   "rating": 3.9,
+   "delivery_time_min": 35,
+   "delivery_fee": 40,
+   "distance_km": 3.2,
+   "cuisine": "Rolls",
+   "offer": "20% OFF"
+  },
+  {
+   "id": 9,
+   "name": "Slice of Italy",
+   "image_url": null,
+   "emoji": "🍕",
+   "rating": 4.6,
+   "delivery_time_min": 40,
+   "delivery_fee": 25,
+   "distance_km": 4.5,
+   "cuisine": "Pizza",
+   "offer": "Flat ₹50 OFF"
+  },
+  {
+   "id": 10,
+   "name": "Dum Pukht",
+   "image_url": null,
+   "emoji": "🍛",
+   "rating": 4.2,
+   "delivery_time_min": 20,
+   "delivery_fee": 0,
+   "distance_km": 1.8,
+   "cuisine": "Biryani",
+   "offer": null
+  },
+  {
+   "id": 11,
+   "name": "Patty Hub",
+   "image_url": null,
+   "emoji": "🍔",
+   "rating": 3.8,
+   "delivery_time_min": 25,
+   "delivery_fee": 20,
+   "distance_km": 3.1,
+   "cuisine": "Burger",
+   "offer": "30% OFF up to ₹75"
+  },
+  {
+   "id": 12,
+   "name": "Dragon Bowl",
+   "image_url": null,
+   "emoji": "🥡",
+   "rating": 4.5,
+   "delivery_time_min": 30,
+   "delivery_fee": 30,
+   "distance_km": 4.4,
+   "cuisine": "Chinese",
+   "offer": "50% OFF up to ₹100"
+  },
+  {
+   "id": 13,
+   "name": "Udupi Bhavan",
+   "image_url": null,
+   "emoji": "🥞",
+   "rating": 4.1,
+   "delivery_time_min": 35,
+   "delivery_fee": 40,
+   "distance_km": 1.7,
+   "cuisine": "South Indian",
+   "offer": "Free delivery"
+  },
+  {
+   "id": 14,
+   "name": "Cake Walk",
+   "image_url": null,
+   "emoji": "🍰",
+   "rating": 4.8,
+   "delivery_time_min": 40,
+   "delivery_fee": 25,
+   "distance_km": 3.0,
+   "cuisine": "Desserts",
+   "offer": "20% OFF"
+  },
+  {
+   "id": 15,
+   "name": "Fit Kitchen",
+   "image_url": null,
+   "emoji": "🥗",
+   "rating": 4.4,
+   "delivery_time_min": 20,
+   "delivery_fee": 0,
+   "distance_km": 4.3,
+   "cuisine": "Healthy",
+   "offer": "Flat ₹50 OFF"
+  },
+  {
+   "id": 16,
+   "name": "Kathi Junction",
+   "image_url": null,
+   "emoji": "🌯",
+   "rating": 4.0,
+   "delivery_time_min": 25,
+   "delivery_fee": 20,
+   "distance_km": 1.6,
+   "cuisine": "Rolls",
+   "offer": null
+  },
+  {
+   "id": 17,
+   "name": "Cheesy Crust",
+   "image_url": null,
+   "emoji": "🍕",
+   "rating": 4.7,
+   "delivery_time_min": 30,
+   "delivery_fee": 30,
+   "distance_km": 2.9,
+   "cuisine": "Pizza",
+   "offer": "30% OFF up to ₹75"
+  },
+  {
+   "id": 18,
+   "name": "Hyderabad Handi",
+   "image_url": null,
+   "emoji": "🍛",
+   "rating": 4.3,
+   "delivery_time_min": 35,
+   "delivery_fee": 40,
+   "distance_km": 4.2,
+   "cuisine": "Biryani",
+   "offer": "50% OFF up to ₹100"
+  },
+  {
+   "id": 19,
+   "name": "Big Bite",
+   "image_url": null,
+   "emoji": "🍔",
+   "rating": 3.9,
+   "delivery_time_min": 40,
+   "delivery_fee": 25,
+   "distance_km": 1.5,
+   "cuisine": "Burger",
+   "offer": "Free delivery"
+  },
+  {
+   "id": 20,
+   "name": "China Town",
+   "image_url": null,
+   "emoji": "🥡",
+   "rating": 4.6,
+   "delivery_time_min": 20,
+   "delivery_fee": 0,
+   "distance_km": 2.8,
+   "cuisine": "Chinese",
+   "offer": "20% OFF"
+  },
+  {
+   "id": 21,
+   "name": "Madras Cafe",
+   "image_url": null,
+   "emoji": "🥞",
+   "rating": 4.2,
+   "delivery_time_min": 25,
+   "delivery_fee": 20,
+   "distance_km": 4.1,
+   "cuisine": "South Indian",
+   "offer": "Flat ₹50 OFF"
+  },
+  {
+   "id": 22,
+   "name": "Frosty Delights",
+   "image_url": null,
+   "emoji": "🍰",
+   "rating": 3.8,
+   "delivery_time_min": 30,
+   "delivery_fee": 30,
+   "distance_km": 1.4,
+   "cuisine": "Desserts",
+   "offer": null
+  },
+  {
+   "id": 23,
+   "name": "Salad Story",
+   "image_url": null,
+   "emoji": "🥗",
+   "rating": 4.5,
+   "delivery_time_min": 35,
+   "delivery_fee": 40,
+   "distance_km": 2.7,
+   "cuisine": "Healthy",
+   "offer": "30% OFF up to ₹75"
+  },
+  {
+   "id": 24,
+   "name": "Wrap Station",
+   "image_url": null,
+   "emoji": "🌯",
+   "rating": 4.1,
+   "delivery_time_min": 40,
+   "delivery_fee": 25,
+   "distance_km": 4.0,
+   "cuisine": "Rolls",
+   "offer": "50% OFF up to ₹100"
+  }
+ ],
+ "menu": [
+  {
+   "id": 1,
+   "restaurant_id": 1,
+   "restaurant_name": "Pizza Palace",
+   "name": "Margherita",
+   "description": "Freshly made margherita, just the way you like it.",
+   "price": 199,
+   "is_veg": true,
+   "image_url": null,
+   "emoji": "🍕",
+   "category": "Pizzas",
+   "is_popular": true,
+   "variants": [
+    {
+     "id": 1,
+     "name": "Small",
+     "extra_price": 0
+    },
+    {
+     "id": 2,
+     "name": "Medium",
+     "extra_price": 80
+    },
+    {
+     "id": 3,
+     "name": "Large",
+     "extra_price": 160
+    }
+   ],
+   "add_ons": [
+    {
+     "id": 100,
+     "name": "Extra Cheese",
+     "extra_price": 30
+    },
+    {
+     "id": 101,
+     "name": "Jalapeno",
+     "extra_price": 20
+    },
+    {
+     "id": 102,
+     "name": "Olives",
+     "extra_price": 25
+    }
+   ]
+  },
+  {
+   "id": 2,
+   "restaurant_id": 1,
+   "restaurant_name": "Pizza Palace",
+   "name": "Farmhouse",
+   "description": "Freshly made farmhouse, just the way you like it.",
+   "price": 299,
+   "is_veg": true,
+   "image_url": null,
+   "emoji": "🍕",
+   "category": "Pizzas",
+   "is_popular": false,
+   "variants": [
+    {
+     "id": 1,
+     "name": "Small",
+     "extra_price": 0
+    },
+    {
+     "id": 2,
+     "name": "Medium",
+     "extra_price": 80
+    },
+    {
+     "id": 3,
+     "name": "Large",
+     "extra_price": 160
+    }
+   ],
+   "add_ons": [
+    {
+     "id": 100,
+     "name": "Extra Cheese",
+     "extra_price": 30
+    },
+    {
+     "id": 101,
+     "name": "Jalapeno",
+     "extra_price": 20
+    },
+    {
+     "id": 102,
+     "name": "Olives",
+     "extra_price": 25
+    }
+   ]
+  },
+  {
+   "id": 3,
+   "restaurant_id": 1,
+   "restaurant_name": "Pizza Palace",
+   "name": "Pepperoni",
+   "description": "Freshly made pepperoni, just the way you like it.",
+   "price": 349,
+   "is_veg": false,
+   "image_url": null,
+   "emoji": "🍕",
+   "category": "Pizzas",
+   "is_popular": false,
+   "variants": [
+    {
+     "id": 1,
+     "name": "Small",
+     "extra_price": 0
+    },
+    {
+     "id": 2,
+     "name": "Medium",
+     "extra_price": 80
+    },
+    {
+     "id": 3,
+     "name": "Large",
+     "extra_price": 160
+    }
+   ],
+   "add_ons": [
+    {
+     "id": 100,
+     "name": "Extra Cheese",
+     "extra_price": 30
+    },
+    {
+     "id": 101,
+     "name": "Jalapeno",
+     "extra_price": 20
+    },
+    {
+     "id": 102,
+     "name": "Olives",
+     "extra_price": 25
+    }
+   ]
+  },
+  {
+   "id": 4,
+   "restaurant_id": 1,
+   "restaurant_name": "Pizza Palace",
+   "name": "BBQ Chicken Pizza",
+   "description": "Freshly made bbq chicken pizza, just the way you like it.",
+   "price": 369,
+   "is_veg": false,
+   "image_url": null,
+   "emoji": "🍕",
+   "category": "Pizzas",
+   "is_popular": false,
+   "variants": [
+    {
+     "id": 1,
+     "name": "Small",
+     "extra_price": 0
+    },
+    {
+     "id": 2,
+     "name": "Medium",
+     "extra_price": 80
+    },
+    {
+     "id": 3,
+     "name": "Large",
+     "extra_price": 160
+    }
+   ],
+   "add_ons": [
+    {
+     "id": 100,
+     "name": "Extra Cheese",
+     "extra_price": 30
+    },
+    {
+     "id": 101,
+     "name": "Jalapeno",
+     "extra_price": 20
+    },
+    {
+     "id": 102,
+     "name": "Olives",
+     "extra_price": 25
+    }
+   ]
+  },
+  {
+   "id": 5,
+   "restaurant_id": 1,
+   "restaurant_name": "Pizza Palace",
+   "name": "Garlic Bread",
+   "description": "Freshly made garlic bread, just the way you like it.",
+   "price": 99,
+   "is_veg": true,
+   "image_url": null,
+   "emoji": "🥖",
+   "category": "Sides",
+   "is_popular": false,
+   "variants": [],
+   "add_ons": []
+  },
+  {
+   "id": 6,
+   "restaurant_id": 1,
+   "restaurant_name": "Pizza Palace",
+   "name": "Stuffed Garlic Bread",
+   "description": "Freshly made stuffed garlic bread, just the way you like it.",
+   "price": 149,
+   "is_veg": true,
+   "image_url": null,
+   "emoji": "🥖",
+   "category": "Sides",
+   "is_popular": false,
+   "variants": [],
+   "add_ons": []
+  },
+  {
+   "id": 7,
+   "restaurant_id": 1,
+   "restaurant_name": "Pizza Palace",
+   "name": "Coke",
+   "description": "Freshly made coke, just the way you like it.",
+   "price": 60,
+   "is_veg": true,
+   "image_url": null,
+   "emoji": "🥤",
+   "category": "Beverages",
+   "is_popular": false,
+   "variants": [],
+   "add_ons": []
+  },
+  {
+   "id": 8,
+   "restaurant_id": 1,
+   "restaurant_name": "Pizza Palace",
+   "name": "Choco Lava Cake",
+   "description": "Freshly made choco lava cake, just the way you like it.",
+   "price": 109,
+   "is_veg": true,
+   "image_url": null,
+   "emoji": "🍰",
+   "category": "Desserts",
+   "is_popular": false,
+   "variants": [],
+   "add_ons": []
+  },
+  {
+   "id": 9,
+   "restaurant_id": 2,
+   "restaurant_name": "Biryani House",
+   "name": "Veg Dum Biryani",
+   "description": "Freshly made veg dum biryani, just the way you like it.",
+   "price": 189,
+   "is_veg": true,
+   "image_url": null,
+   "emoji": "🍛",
+   "category": "Biryani",
+   "is_popular": true,
+   "variants": [
+    {
+     "id": 1,
+     "name": "Half",
+     "extra_price": 0
+    },
+    {
+     "id": 2,
+     "name": "Full",
+     "extra_price": 100
+    }
+   ],
+   "add_ons": [
+    {
+     "id": 103,
+     "name": "Raita",
+     "extra_price": 20
+    },
+    {
+     "id": 104,
+     "name": "Boiled Egg",
+     "extra_price": 15
+    },
+    {
+     "id": 105,
+     "name": "Extra Gravy",
+     "extra_price": 25
+    }
+   ]
+  },
+  {
+   "id": 10,
+   "restaurant_id": 2,
+   "restaurant_name": "Biryani House",
+   "name": "Paneer Tikka Biryani",
+   "description": "Freshly made paneer tikka biryani, just the way you like it.",
+   "price": 229,
+   "is_veg": true,
+   "image_url": null,
+   "emoji": "🍛",
+   "category": "Biryani",
+   "is_popular": false,
+   "variants": [
+    {
+     "id": 1,
+     "name": "Half",
+     "extra_price": 0
+    },
+    {
+     "id": 2,
+     "name": "Full",
+     "extra_price": 100
+    }
+   ],
+   "add_ons": [
+    {
+     "id": 103,
+     "name": "Raita",
+     "extra_price": 20
+    },
+    {
+     "id": 104,
+     "name": "Boiled Egg",
+     "extra_price": 15
+    },
+    {
+     "id": 105,
+     "name": "Extra Gravy",
+     "extra_price": 25
+    }
+   ]
+  },
+  {
+   "id": 11,
+   "restaurant_id": 2,
+   "restaurant_name": "Biryani House",
+   "name": "Chicken Dum Biryani",
+   "description": "Freshly made chicken dum biryani, just the way you like it.",
+   "price": 259,
+   "is_veg": false,
+   "image_url": null,
+   "emoji": "🍛",
+   "category": "Biryani",
+   "is_popular": false,
+   "variants": [
+    {
+     "id": 1,
+     "name": "Half",
+     "extra_price": 0
+    },
+    {
+     "id": 2,
+     "name": "Full",
+     "extra_price": 100
+    }
+   ],
+   "add_ons": [
+    {
+     "id": 103,
+     "name": "Raita",
+     "extra_price": 20
+    },
+    {
+     "id": 104,
+     "name": "Boiled Egg",
+     "extra_price": 15
+    },
+    {
+     "id": 105,
+     "name": "Extra Gravy",
+     "extra_price": 25
+    }
+   ]
+  },
+  {
+   "id": 12,
+   "restaurant_id": 2,
+   "restaurant_name": "Biryani House",
+   "name": "Mutton Biryani",
+   "description": "Freshly made mutton biryani, just the way you like it.",
+   "price": 329,
+   "is_veg": false,
+   "image_url": null,
+   "emoji": "🍛",
+   "category": "Biryani",
+   "is_popular": false,
+   "variants": [
+    {
+     "id": 1,
+     "name": "Half",
+     "extra_price": 0
+    },
+    {
+     "id": 2,
+     "name": "Full",
+     "extra_price": 100
+    }
+   ],
+   "add_ons": [
+    {
+     "id": 103,
+     "name": "Raita",
+     "extra_price": 20
+    },
+    {
+     "id": 104,
+     "name": "Boiled Egg",
+     "extra_price": 15
+    },
+    {
+     "id": 105,
+     "name": "Extra Gravy",
+     "extra_price": 25
+    }
+   ]
+  },
+  {
+   "id": 13,
+   "restaurant_id": 2,
+   "restaurant_name": "Biryani House",
+   "name": "Chicken 65",
+   "description": "Freshly made chicken 65, just the way you like it.",
+   "price": 189,
+   "is_veg": false,
+   "image_url": null,
+   "emoji": "🍗",
+   "category": "Starters",
+   "is_popular": false,
+   "variants": [],
+   "add_ons": []
+  },
+  {
+   "id": 14,
+   "restaurant_id": 2,
+   "restaurant_name": "Biryani House",
+   "name": "Paneer 65",
+   "description": "Freshly made paneer 65, just the way you like it.",
+   "price": 169,
+   "is_veg": true,
+   "image_url": null,
+   "emoji": "🧀",
+   "category": "Starters",
+   "is_popular": false,
+   "variants": [],
+   "add_ons": []
+  },
+  {
+   "id": 15,
+   "restaurant_id": 2,
+   "restaurant_name": "Biryani House",
+   "name": "Raita",
+   "description": "Freshly made raita, just the way you like it.",
+   "price": 39,
+   "is_veg": true,
+   "image_url": null,
+   "emoji": "🥣",
+   "category": "Sides",
+   "is_popular": false,
+   "variants": [],
+   "add_ons": []
+  },
+  {
+   "id": 16,
+   "restaurant_id": 2,
+   "restaurant_name": "Biryani House",
+   "name": "Gulab Jamun",
+   "description": "Freshly made gulab jamun, just the way you like it.",
+   "price": 69,
+   "is_veg": true,
+   "image_url": null,
+   "emoji": "🍮",
+   "category": "Desserts",
+   "is_popular": false,
+   "variants": [],
+   "add_ons": []
+  },
+  {
+   "id": 17,
+   "restaurant_id": 3,
+   "restaurant_name": "Burger Barn",
+   "name": "Aloo Tikki Burger",
+   "description": "Freshly made aloo tikki burger, just the way you like it.",
+   "price": 89,
+   "is_veg": true,
+   "image_url": null,
+   "emoji": "🍔",
+   "category": "Burgers",
+   "is_popular": true,
+   "variants": [],
+   "add_ons": [
+    {
+     "id": 106,
+     "name": "Extra Cheese Slice",
+     "extra_price": 20
+    },
+    {
+     "id": 107,
+     "name": "Extra Patty",
+     "extra_price": 60
+    }
+   ]
+  },
+  {
+   "id": 18,
+   "restaurant_id": 3,
+   "restaurant_name": "Burger Barn",
+   "name": "Veggie Supreme",
+   "description": "Freshly made veggie supreme, just the way you like it.",
+   "price": 139,
+   "is_veg": true,
+   "image_url": null,
+   "emoji": "🍔",
+   "category": "Burgers",
+   "is_popular": false,
+   "variants": [],
+   "add_ons": [
+    {
+     "id": 106,
+     "name": "Extra Cheese Slice",
+     "extra_price": 20
+    },
+    {
+     "id": 107,
+     "name": "Extra Patty",
+     "extra_price": 60
+    }
+   ]
+  },
+  {
+   "id": 19,
+   "restaurant_id": 3,
+   "restaurant_name": "Burger Barn",
+   "name": "Chicken Zinger",
+   "description": "Freshly made chicken zinger, just the way you like it.",
+   "price": 169,
+   "is_veg": false,
+   "image_url": null,
+   "emoji": "🍔",
+   "category": "Burgers",
+   "is_popular": false,
+   "variants": [],
+   "add_ons": [
+    {
+     "id": 106,
+     "name": "Extra Cheese Slice",
+     "extra_price": 20
+    },
+    {
+     "id": 107,
+     "name": "Extra Patty",
+     "extra_price": 60
+    }
+   ]
+  },
+  {
+   "id": 20,
+   "restaurant_id": 3,
+   "restaurant_name": "Burger Barn",
+   "name": "Double Cheese Chicken",
+   "description": "Freshly made double cheese chicken, just the way you like it.",
+   "price": 219,
+   "is_veg": false,
+   "image_url": null,
+   "emoji": "🍔",
+   "category": "Burgers",
+   "is_popular": false,
+   "variants": [],
+   "add_ons": [
+    {
+     "id": 106,
+     "name": "Extra Cheese Slice",
+     "extra_price": 20
+    },
+    {
+     "id": 107,
+     "name": "Extra Patty",
+     "extra_price": 60
+    }
+   ]
+  },
+  {
+   "id": 21,
+   "restaurant_id": 3,
+   "restaurant_name": "Burger Barn",
+   "name": "French Fries",
+   "description": "Freshly made french fries, just the way you like it.",
+   "price": 89,
+   "is_veg": true,
+   "image_url": null,
+   "emoji": "🍟",
+   "category": "Sides",
+   "is_popular": false,
+   "variants": [],
+   "add_ons": []
+  },
+  {
+   "id": 22,
+   "restaurant_id": 3,
+   "restaurant_name": "Burger Barn",
+   "name": "Peri Peri Fries",
+   "description": "Freshly made peri peri fries, just the way you like it.",
+   "price": 109,
+   "is_veg": true,
+   "image_url": null,
+   "emoji": "🍟",
+   "category": "Sides",
+   "is_popular": false,
+   "variants": [],
+   "add_ons": []
+  },
+  {
+   "id": 23,
+   "restaurant_id": 3,
+   "restaurant_name": "Burger Barn",
+   "name": "Cold Coffee",
+   "description": "Freshly made cold coffee, just the way you like it.",
+   "price": 119,
+   "is_veg": true,
+   "image_url": null,
+   "emoji": "🥤",
+   "category": "Beverages",
+   "is_popular": false,
+   "variants": [],
+   "add_ons": []
+  },
+  {
+   "id": 24,
+   "restaurant_id": 3,
+   "restaurant_name": "Burger Barn",
+   "name": "Chocolate Shake",
+   "description": "Freshly made chocolate shake, just the way you like it.",
+   "price": 139,
+   "is_veg": true,
+   "image_url": null,
+   "emoji": "🥛",
+   "category": "Beverages",
+   "is_popular": false,
+   "variants": [],
+   "add_ons": []
+  },
+  {
+   "id": 25,
+   "restaurant_id": 4,
+   "restaurant_name": "Wok Express",
+   "name": "Veg Hakka Noodles",
+   "description": "Freshly made veg hakka noodles, just the way you like it.",
+   "price": 149,
+   "is_veg": true,
+   "image_url": null,
+   "emoji": "🍜",
+   "category": "Noodles",
+   "is_popular": true,
+   "variants": [
+    {
+     "id": 1,
+     "name": "Half",
+     "extra_price": 0
+    },
+    {
+     "id": 2,
+     "name": "Full",
+     "extra_price": 60
+    }
+   ],
+   "add_ons": [
+    {
+     "id": 108,
+     "name": "Extra Sauce",
+     "extra_price": 15
+    }
+   ]
+  },
+  {
+   "id": 26,
+   "restaurant_id": 4,
+   "restaurant_name": "Wok Express",
+   "name": "Chicken Hakka Noodles",
+   "description": "Freshly made chicken hakka noodles, just the way you like it.",
+   "price": 189,
+   "is_veg": false,
+   "image_url": null,
+   "emoji": "🍜",
+   "category": "Noodles",
+   "is_popular": false,
+   "variants": [
+    {
+     "id": 1,
+     "name": "Half",
+     "extra_price": 0
+    },
+    {
+     "id": 2,
+     "name": "Full",
+     "extra_price": 60
+    }
+   ],
+   "add_ons": [
+    {
+     "id": 108,
+     "name": "Extra Sauce",
+     "extra_price": 15
+    }
+   ]
+  },
+  {
+   "id": 27,
+   "restaurant_id": 4,
+   "restaurant_name": "Wok Express",
+   "name": "Veg Manchurian",
+   "description": "Freshly made veg manchurian, just the way you like it.",
+   "price": 159,
+   "is_veg": true,
+   "image_url": null,
+   "emoji": "🥡",
+   "category": "Starters",
+   "is_popular": false,
+   "variants": [],
+   "add_ons": [
+    {
+     "id": 108,
+     "name": "Extra Sauce",
+     "extra_price": 15
+    }
+   ]
+  },
+  {
+   "id": 28,
+   "restaurant_id": 4,
+   "restaurant_name": "Wok Express",
+   "name": "Chilli Chicken",
+   "description": "Freshly made chilli chicken, just the way you like it.",
+   "price": 219,
+   "is_veg": false,
+   "image_url": null,
+   "emoji": "🍗",
+   "category": "Starters",
+   "is_popular": false,
+   "variants": [],
+   "add_ons": [
+    {
+     "id": 108,
+     "name": "Extra Sauce",
+     "extra_price": 15
+    }
+   ]
+  },
+  {
+   "id": 29,
+   "restaurant_id": 4,
+   "restaurant_name": "Wok Express",
+   "name": "Schezwan Fried Rice",
+   "description": "Freshly made schezwan fried rice, just the way you like it.",
+   "price": 169,
+   "is_veg": true,
+   "image_url": null,
+   "emoji": "🍚",
+   "category": "Rice",
+   "is_popular": false,
+   "variants": [
+    {
+     "id": 1,
+     "name": "Half",
+     "extra_price": 0
+    },
+    {
+     "id": 2,
+     "name": "Full",
+     "extra_price": 60
+    }
+   ],
+   "add_ons": [
+    {
+     "id": 108,
+     "name": "Extra Sauce",
+     "extra_price": 15
+    }
+   ]
+  },
+  {
+   "id": 30,
+   "restaurant_id": 4,
+   "restaurant_name": "Wok Express",
+   "name": "Chicken Fried Rice",
+   "description": "Freshly made chicken fried rice, just the way you like it.",
+   "price": 199,
+   "is_veg": false,
+   "image_url": null,
+   "emoji": "🍚",
+   "category": "Rice",
+   "is_popular": false,
+   "variants": [
+    {
+     "id": 1,
+     "name": "Half",
+     "extra_price": 0
+    },
+    {
+     "id": 2,
+     "name": "Full",
+     "extra_price": 60
+    }
+   ],
+   "add_ons": [
+    {
+     "id": 108,
+     "name": "Extra Sauce",
+     "extra_price": 15
+    }
+   ]
+  },
+  {
+   "id": 31,
+   "restaurant_id": 4,
+   "restaurant_name": "Wok Express",
+   "name": "Spring Rolls",
+   "description": "Freshly made spring rolls, just the way you like it.",
+   "price": 129,
+   "is_veg": true,
+   "image_url": null,
+   "emoji": "🌯",
+   "category": "Starters",
+   "is_popular": false,
+   "variants": [],
+   "add_ons": [
+    {
+     "id": 108,
+     "name": "Extra Sauce",
+     "extra_price": 15
+    }
+   ]
+  },
+  {
+   "id": 32,
+   "restaurant_id": 4,
+   "restaurant_name": "Wok Express",
+   "name": "Hot & Sour Soup",
+   "description": "Freshly made hot & sour soup, just the way you like it.",
+   "price": 99,
+   "is_veg": true,
+   "image_url": null,
+   "emoji": "🥣",
+   "category": "Soups",
+   "is_popular": false,
+   "variants": [],
+   "add_ons": []
+  },
+  {
+   "id": 33,
+   "restaurant_id": 5,
+   "restaurant_name": "Dosa Corner",
+   "name": "Masala Dosa",
+   "description": "Freshly made masala dosa, just the way you like it.",
+   "price": 99,
+   "is_veg": true,
+   "image_url": null,
+   "emoji": "🥞",
+   "category": "Dosa",
+   "is_popular": true,
+   "variants": [],
+   "add_ons": [
+    {
+     "id": 109,
+     "name": "Extra Chutney",
+     "extra_price": 10
+    },
+    {
+     "id": 110,
+     "name": "Butter",
+     "extra_price": 20
+    }
+   ]
+  },
+  {
+   "id": 34,
+   "restaurant_id": 5,
+   "restaurant_name": "Dosa Corner",
+   "name": "Mysore Masala Dosa",
+   "description": "Freshly made mysore masala dosa, just the way you like it.",
+   "price": 119,
+   "is_veg": true,
+   "image_url": null,
+   "emoji": "🥞",
+   "category": "Dosa",
+   "is_popular": false,
+   "variants": [],
+   "add_ons": [
+    {
+     "id": 109,
+     "name": "Extra Chutney",
+     "extra_price": 10
+    },
+    {
+     "id": 110,
+     "name": "Butter",
+     "extra_price": 20
+    }
+   ]
+  },
+  {
+   "id": 35,
+   "restaurant_id": 5,
+   "restaurant_name": "Dosa Corner",
+   "name": "Idli Sambar",
+   "description": "Freshly made idli sambar, just the way you like it.",
+   "price": 79,
+   "is_veg": true,
+   "image_url": null,
+   "emoji": "🍘",
+   "category": "Breakfast",
+   "is_popular": false,
+   "variants": [],
+   "add_ons": [
+    {
+     "id": 111,
+     "name": "Extra Sambar",
+     "extra_price": 15
+    }
+   ]
+  },
+  {
+   "id": 36,
+   "restaurant_id": 5,
+   "restaurant_name": "Dosa Corner",
+   "name": "Medu Vada",
+   "description": "Freshly made medu vada, just the way you like it.",
+   "price": 89,
+   "is_veg": true,
+   "image_url": null,
+   "emoji": "🍩",
+   "category": "Breakfast",
+   "is_popular": false,
+   "variants": [],
+   "add_ons": [
+    {
+     "id": 111,
+     "name": "Extra Sambar",
+     "extra_price": 15
+    }
+   ]
+  },
+  {
+   "id": 37,
+   "restaurant_id": 5,
+   "restaurant_name": "Dosa Corner",
+   "name": "Onion Uttapam",
+   "description": "Freshly made onion uttapam, just the way you like it.",
+   "price": 109,
+   "is_veg": true,
+   "image_url": null,
+   "emoji": "🥞",
+   "category": "Dosa",
+   "is_popular": false,
+   "variants": [],
+   "add_ons": [
+    {
+     "id": 109,
+     "name": "Extra Chutney",
+     "extra_price": 10
+    },
+    {
+     "id": 110,
+     "name": "Butter",
+     "extra_price": 20
+    }
+   ]
+  },
+  {
+   "id": 38,
+   "restaurant_id": 5,
+   "restaurant_name": "Dosa Corner",
+   "name": "Rava Upma",
+   "description": "Freshly made rava upma, just the way you like it.",
+   "price": 79,
+   "is_veg": true,
+   "image_url": null,
+   "emoji": "🍲",
+   "category": "Breakfast",
+   "is_popular": false,
+   "variants": [],
+   "add_ons": [
+    {
+     "id": 111,
+     "name": "Extra Sambar",
+     "extra_price": 15
+    }
+   ]
+  },
+  {
+   "id": 39,
+   "restaurant_id": 5,
+   "restaurant_name": "Dosa Corner",
+   "name": "Filter Coffee",
+   "description": "Freshly made filter coffee, just the way you like it.",
+   "price": 49,
+   "is_veg": true,
+   "image_url": null,
+   "emoji": "☕",
+   "category": "Beverages",
+   "is_popular": false,
+   "variants": [],
+   "add_ons": []
+  },
+  {
+   "id": 40,
+   "restaurant_id": 5,
+   "restaurant_name": "Dosa Corner",
+   "name": "Ven Pongal",
+   "description": "Freshly made ven pongal, just the way you like it.",
+   "price": 99,
+   "is_veg": true,
+   "image_url": null,
+   "emoji": "🍲",
+   "category": "Breakfast",
+   "is_popular": false,
+   "variants": [],
+   "add_ons": [
+    {
+     "id": 111,
+     "name": "Extra Sambar",
+     "extra_price": 15
+    }
+   ]
+  },
+  {
+   "id": 41,
+   "restaurant_id": 6,
+   "restaurant_name": "Sweet Tooth",
+   "name": "Chocolate Brownie",
+   "description": "Freshly made chocolate brownie, just the way you like it.",
+   "price": 129,
+   "is_veg": true,
+   "image_url": null,
+   "emoji": "🍫",
+   "category": "Cakes",
+   "is_popular": true,
+   "variants": [],
+   "add_ons": [
+    {
+     "id": 112,
+     "name": "Choco Sauce",
+     "extra_price": 20
+    }
+   ]
+  },
+  {
+   "id": 42,
+   "restaurant_id": 6,
+   "restaurant_name": "Sweet Tooth",
+   "name": "Red Velvet Pastry",
+   "description": "Freshly made red velvet pastry, just the way you like it.",
+   "price": 119,
+   "is_veg": true,
+   "image_url": null,
+   "emoji": "🍰",
+   "category": "Cakes",
+   "is_popular": false,
+   "variants": [],
+   "add_ons": [
+    {
+     "id": 112,
+     "name": "Choco Sauce",
+     "extra_price": 20
+    }
+   ]
+  },
+  {
+   "id": 43,
+   "restaurant_id": 6,
+   "restaurant_name": "Sweet Tooth",
+   "name": "Belgian Waffle",
+   "description": "Freshly made belgian waffle, just the way you like it.",
+   "price": 169,
+   "is_veg": true,
+   "image_url": null,
+   "emoji": "🧇",
+   "category": "Waffles",
+   "is_popular": false,
+   "variants": [],
+   "add_ons": [
+    {
+     "id": 112,
+     "name": "Choco Sauce",
+     "extra_price": 20
+    },
+    {
+     "id": 113,
+     "name": "Extra Scoop",
+     "extra_price": 40
+    }
+   ]
+  },
+  {
+   "id": 44,
+   "restaurant_id": 6,
+   "restaurant_name": "Sweet Tooth",
+   "name": "Choco Sundae",
+   "description": "Freshly made choco sundae, just the way you like it.",
+   "price": 149,
+   "is_veg": true,
+   "image_url": null,
+   "emoji": "🍨",
+   "category": "Ice Cream",
+   "is_popular": false,
+   "variants": [],
+   "add_ons": [
+    {
+     "id": 113,
+     "name": "Extra Scoop",
+     "extra_price": 40
+    },
+    {
+     "id": 112,
+     "name": "Choco Sauce",
+     "extra_price": 20
+    }
+   ]
+  },
+  {
+   "id": 45,
+   "restaurant_id": 6,
+   "restaurant_name": "Sweet Tooth",
+   "name": "Vanilla Scoop",
+   "description": "Freshly made vanilla scoop, just the way you like it.",
+   "price": 69,
+   "is_veg": true,
+   "image_url": null,
+   "emoji": "🍦",
+   "category": "Ice Cream",
+   "is_popular": false,
+   "variants": [],
+   "add_ons": [
+    {
+     "id": 113,
+     "name": "Extra Scoop",
+     "extra_price": 40
+    },
+    {
+     "id": 112,
+     "name": "Choco Sauce",
+     "extra_price": 20
+    }
+   ]
+  },
+  {
+   "id": 46,
+   "restaurant_id": 6,
+   "restaurant_name": "Sweet Tooth",
+   "name": "Oreo Shake",
+   "description": "Freshly made oreo shake, just the way you like it.",
+   "price": 159,
+   "is_veg": true,
+   "image_url": null,
+   "emoji": "🥛",
+   "category": "Shakes",
+   "is_popular": false,
+   "variants": [],
+   "add_ons": []
+  },
+  {
+   "id": 47,
+   "restaurant_id": 6,
+   "restaurant_name": "Sweet Tooth",
+   "name": "Glazed Donut",
+   "description": "Freshly made glazed donut, just the way you like it.",
+   "price": 89,
+   "is_veg": true,
+   "image_url": null,
+   "emoji": "🍩",
+   "category": "Bakery",
+   "is_popular": false,
+   "variants": [],
+   "add_ons": []
+  },
+  {
+   "id": 48,
+   "restaurant_id": 6,
+   "restaurant_name": "Sweet Tooth",
+   "name": "Rasmalai",
+   "description": "Freshly made rasmalai, just the way you like it.",
+   "price": 99,
+   "is_veg": true,
+   "image_url": null,
+   "emoji": "🍮",
+   "category": "Indian Sweets",
+   "is_popular": false,
+   "variants": [],
+   "add_ons": []
+  },
+  {
+   "id": 49,
+   "restaurant_id": 7,
+   "restaurant_name": "Green Bowl",
+   "name": "Greek Salad",
+   "description": "Freshly made greek salad, just the way you like it.",
+   "price": 199,
+   "is_veg": true,
+   "image_url": null,
+   "emoji": "🥗",
+   "category": "Salads",
+   "is_popular": true,
+   "variants": [],
+   "add_ons": [
+    {
+     "id": 114,
+     "name": "Extra Dressing",
+     "extra_price": 15
+    },
+    {
+     "id": 115,
+     "name": "Add Egg",
+     "extra_price": 20
+    }
+   ]
+  },
+  {
+   "id": 50,
+   "restaurant_id": 7,
+   "restaurant_name": "Green Bowl",
+   "name": "Chicken Caesar Salad",
+   "description": "Freshly made chicken caesar salad, just the way you like it.",
+   "price": 239,
+   "is_veg": false,
+   "image_url": null,
+   "emoji": "🥗",
+   "category": "Salads",
+   "is_popular": false,
+   "variants": [],
+   "add_ons": [
+    {
+     "id": 114,
+     "name": "Extra Dressing",
+     "extra_price": 15
+    },
+    {
+     "id": 115,
+     "name": "Add Egg",
+     "extra_price": 20
+    }
+   ]
+  },
+  {
+   "id": 51,
+   "restaurant_id": 7,
+   "restaurant_name": "Green Bowl",
+   "name": "Quinoa Bowl",
+   "description": "Freshly made quinoa bowl, just the way you like it.",
+   "price": 259,
+   "is_veg": true,
+   "image_url": null,
+   "emoji": "🥣",
+   "category": "Bowls",
+   "is_popular": false,
+   "variants": [],
+   "add_ons": [
+    {
+     "id": 114,
+     "name": "Extra Dressing",
+     "extra_price": 15
+    },
+    {
+     "id": 115,
+     "name": "Add Egg",
+     "extra_price": 20
+    }
+   ]
+  },
+  {
+   "id": 52,
+   "restaurant_id": 7,
+   "restaurant_name": "Green Bowl",
+   "name": "Grilled Chicken Bowl",
+   "description": "Freshly made grilled chicken bowl, just the way you like it.",
+   "price": 299,
+   "is_veg": false,
+   "image_url": null,
+   "emoji": "🍱",
+   "category": "Bowls",
+   "is_popular": false,
+   "variants": [],
+   "add_ons": [
+    {
+     "id": 114,
+     "name": "Extra Dressing",
+     "extra_price": 15
+    },
+    {
+     "id": 115,
+     "name": "Add Egg",
+     "extra_price": 20
+    }
+   ]
+  },
+  {
+   "id": 53,
+   "restaurant_id": 7,
+   "restaurant_name": "Green Bowl",
+   "name": "Avocado Toast",
+   "description": "Freshly made avocado toast, just the way you like it.",
+   "price": 179,
+   "is_veg": true,
+   "image_url": null,
+   "emoji": "🥑",
+   "category": "Breakfast",
+   "is_popular": false,
+   "variants": [],
+   "add_ons": []
+  },
+  {
+   "id": 54,
+   "restaurant_id": 7,
+   "restaurant_name": "Green Bowl",
+   "name": "Fruit Bowl",
+   "description": "Freshly made fruit bowl, just the way you like it.",
+   "price": 149,
+   "is_veg": true,
+   "image_url": null,
+   "emoji": "🍓",
+   "category": "Breakfast",
+   "is_popular": false,
+   "variants": [],
+   "add_ons": []
+  },
+  {
+   "id": 55,
+   "restaurant_id": 7,
+   "restaurant_name": "Green Bowl",
+   "name": "Green Smoothie",
+   "description": "Freshly made green smoothie, just the way you like it.",
+   "price": 149,
+   "is_veg": true,
+   "image_url": null,
+   "emoji": "🥤",
+   "category": "Smoothies",
+   "is_popular": false,
+   "variants": [],
+   "add_ons": []
+  },
+  {
+   "id": 56,
+   "restaurant_id": 7,
+   "restaurant_name": "Green Bowl",
+   "name": "Protein Shake",
+   "description": "Freshly made protein shake, just the way you like it.",
+   "price": 189,
+   "is_veg": true,
+   "image_url": null,
+   "emoji": "🥛",
+   "category": "Smoothies",
+   "is_popular": false,
+   "variants": [],
+   "add_ons": []
+  },
+  {
+   "id": 57,
+   "restaurant_id": 8,
+   "restaurant_name": "Roll Express",
+   "name": "Paneer Tikka Roll",
+   "description": "Freshly made paneer tikka roll, just the way you like it.",
+   "price": 129,
+   "is_veg": true,
+   "image_url": null,
+   "emoji": "🌯",
+   "category": "Rolls",
+   "is_popular": true,
+   "variants": [],
+   "add_ons": [
+    {
+     "id": 100,
+     "name": "Extra Cheese",
+     "extra_price": 20
+    },
+    {
+     "id": 116,
+     "name": "Extra Egg",
+     "extra_price": 15
+    }
+   ]
+  },
+  {
+   "id": 58,
+   "restaurant_id": 8,
+   "restaurant_name": "Roll Express",
+   "name": "Veg Kathi Roll",
+   "description": "Freshly made veg kathi roll, just the way you like it.",
+   "price": 99,
+   "is_veg": true,
+   "image_url": null,
+   "emoji": "🌯",
+   "category": "Rolls",
+   "is_popular": false,
+   "variants": [],
+   "add_ons": [
+    {
+     "id": 100,
+     "name": "Extra Cheese",
+     "extra_price": 20
+    },
+    {
+     "id": 116,
+     "name": "Extra Egg",
+     "extra_price": 15
+    }
+   ]
+  },
+  {
+   "id": 59,
+   "restaurant_id": 8,
+   "restaurant_name": "Roll Express",
+   "name": "Egg Roll",
+   "description": "Freshly made egg roll, just the way you like it.",
+   "price": 109,
+   "is_veg": false,
+   "image_url": null,
+   "emoji": "🥚",
+   "category": "Rolls",
+   "is_popular": false,
+   "variants": [],
+   "add_ons": [
+    {
+     "id": 100,
+     "name": "Extra Cheese",
+     "extra_price": 20
+    },
+    {
+     "id": 116,
+     "name": "Extra Egg",
+     "extra_price": 15
+    }
+   ]
+  },
+  {
+   "id": 60,
+   "restaurant_id": 8,
+   "restaurant_name": "Roll Express",
+   "name": "Chicken Tikka Roll",
+   "description": "Freshly made chicken tikka roll, just the way you like it.",
+   "price": 159,
+   "is_veg": false,
+   "image_url": null,
+   "emoji": "🌯",
+   "category": "Rolls",
+   "is_popular": false,
+   "variants": [],
+   "add_ons": [
+    {
+     "id": 100,
+     "name": "Extra Cheese",
+     "extra_price": 20
+    },
+    {
+     "id": 116,
+     "name": "Extra Egg",
+     "extra_price": 15
+    }
+   ]
+  },
+  {
+   "id": 61,
+   "restaurant_id": 8,
+   "restaurant_name": "Roll Express",
+   "name": "Mutton Seekh Roll",
+   "description": "Freshly made mutton seekh roll, just the way you like it.",
+   "price": 189,
+   "is_veg": false,
+   "image_url": null,
+   "emoji": "🌯",
+   "category": "Rolls",
+   "is_popular": false,
+   "variants": [],
+   "add_ons": [
+    {
+     "id": 100,
+     "name": "Extra Cheese",
+     "extra_price": 20
+    },
+    {
+     "id": 116,
+     "name": "Extra Egg",
+     "extra_price": 15
+    }
+   ]
+  },
+  {
+   "id": 62,
+   "restaurant_id": 8,
+   "restaurant_name": "Roll Express",
+   "name": "Chicken Momos",
+   "description": "Freshly made chicken momos, just the way you like it.",
+   "price": 129,
+   "is_veg": false,
+   "image_url": null,
+   "emoji": "🥟",
+   "category": "Momos",
+   "is_popular": false,
+   "variants": [],
+   "add_ons": []
+  },
+  {
+   "id": 63,
+   "restaurant_id": 8,
+   "restaurant_name": "Roll Express",
+   "name": "Veg Momos",
+   "description": "Freshly made veg momos, just the way you like it.",
+   "price": 99,
+   "is_veg": true,
+   "image_url": null,
+   "emoji": "🥟",
+   "category": "Momos",
+   "is_popular": false,
+   "variants": [],
+   "add_ons": []
+  },
+  {
+   "id": 64,
+   "restaurant_id": 8,
+   "restaurant_name": "Roll Express",
+   "name": "Lime Soda",
+   "description": "Freshly made lime soda, just the way you like it.",
+   "price": 59,
+   "is_veg": true,
+   "image_url": null,
+   "emoji": "🍋",
+   "category": "Beverages",
+   "is_popular": false,
+   "variants": [],
+   "add_ons": []
+  },
+  {
+   "id": 65,
+   "restaurant_id": 9,
+   "restaurant_name": "Slice of Italy",
+   "name": "Margherita",
+   "description": "Freshly made margherita, just the way you like it.",
+   "price": 219,
+   "is_veg": true,
+   "image_url": null,
+   "emoji": "🍕",
+   "category": "Pizzas",
+   "is_popular": true,
+   "variants": [
+    {
+     "id": 1,
+     "name": "Small",
+     "extra_price": 0
+    },
+    {
+     "id": 2,
+     "name": "Medium",
+     "extra_price": 80
+    },
+    {
+     "id": 3,
+     "name": "Large",
+     "extra_price": 160
+    }
+   ],
+   "add_ons": [
+    {
+     "id": 100,
+     "name": "Extra Cheese",
+     "extra_price": 30
+    },
+    {
+     "id": 101,
+     "name": "Jalapeno",
+     "extra_price": 20
+    },
+    {
+     "id": 102,
+     "name": "Olives",
+     "extra_price": 25
+    }
+   ]
+  },
+  {
+   "id": 66,
+   "restaurant_id": 9,
+   "restaurant_name": "Slice of Italy",
+   "name": "Farmhouse",
+   "description": "Freshly made farmhouse, just the way you like it.",
+   "price": 329,
+   "is_veg": true,
+   "image_url": null,
+   "emoji": "🍕",
+   "category": "Pizzas",
+   "is_popular": false,
+   "variants": [
+    {
+     "id": 1,
+     "name": "Small",
+     "extra_price": 0
+    },
+    {
+     "id": 2,
+     "name": "Medium",
+     "extra_price": 80
+    },
+    {
+     "id": 3,
+     "name": "Large",
+     "extra_price": 160
+    }
+   ],
+   "add_ons": [
+    {
+     "id": 100,
+     "name": "Extra Cheese",
+     "extra_price": 30
+    },
+    {
+     "id": 101,
+     "name": "Jalapeno",
+     "extra_price": 20
+    },
+    {
+     "id": 102,
+     "name": "Olives",
+     "extra_price": 25
+    }
+   ]
+  },
+  {
+   "id": 67,
+   "restaurant_id": 9,
+   "restaurant_name": "Slice of Italy",
+   "name": "Pepperoni",
+   "description": "Freshly made pepperoni, just the way you like it.",
+   "price": 384,
+   "is_veg": false,
+   "image_url": null,
+   "emoji": "🍕",
+   "category": "Pizzas",
+   "is_popular": false,
+   "variants": [
+    {
+     "id": 1,
+     "name": "Small",
+     "extra_price": 0
+    },
+    {
+     "id": 2,
+     "name": "Medium",
+     "extra_price": 80
+    },
+    {
+     "id": 3,
+     "name": "Large",
+     "extra_price": 160
+    }
+   ],
+   "add_ons": [
+    {
+     "id": 100,
+     "name": "Extra Cheese",
+     "extra_price": 30
+    },
+    {
+     "id": 101,
+     "name": "Jalapeno",
+     "extra_price": 20
+    },
+    {
+     "id": 102,
+     "name": "Olives",
+     "extra_price": 25
+    }
+   ]
+  },
+  {
+   "id": 68,
+   "restaurant_id": 9,
+   "restaurant_name": "Slice of Italy",
+   "name": "BBQ Chicken Pizza",
+   "description": "Freshly made bbq chicken pizza, just the way you like it.",
+   "price": 406,
+   "is_veg": false,
+   "image_url": null,
+   "emoji": "🍕",
+   "category": "Pizzas",
+   "is_popular": false,
+   "variants": [
+    {
+     "id": 1,
+     "name": "Small",
+     "extra_price": 0
+    },
+    {
+     "id": 2,
+     "name": "Medium",
+     "extra_price": 80
+    },
+    {
+     "id": 3,
+     "name": "Large",
+     "extra_price": 160
+    }
+   ],
+   "add_ons": [
+    {
+     "id": 100,
+     "name": "Extra Cheese",
+     "extra_price": 30
+    },
+    {
+     "id": 101,
+     "name": "Jalapeno",
+     "extra_price": 20
+    },
+    {
+     "id": 102,
+     "name": "Olives",
+     "extra_price": 25
+    }
+   ]
+  },
+  {
+   "id": 69,
+   "restaurant_id": 9,
+   "restaurant_name": "Slice of Italy",
+   "name": "Garlic Bread",
+   "description": "Freshly made garlic bread, just the way you like it.",
+   "price": 109,
+   "is_veg": true,
+   "image_url": null,
+   "emoji": "🥖",
+   "category": "Sides",
+   "is_popular": false,
+   "variants": [],
+   "add_ons": []
+  },
+  {
+   "id": 70,
+   "restaurant_id": 9,
+   "restaurant_name": "Slice of Italy",
+   "name": "Stuffed Garlic Bread",
+   "description": "Freshly made stuffed garlic bread, just the way you like it.",
+   "price": 164,
+   "is_veg": true,
+   "image_url": null,
+   "emoji": "🥖",
+   "category": "Sides",
+   "is_popular": false,
+   "variants": [],
+   "add_ons": []
+  },
+  {
+   "id": 71,
+   "restaurant_id": 9,
+   "restaurant_name": "Slice of Italy",
+   "name": "Coke",
+   "description": "Freshly made coke, just the way you like it.",
+   "price": 66,
+   "is_veg": true,
+   "image_url": null,
+   "emoji": "🥤",
+   "category": "Beverages",
+   "is_popular": false,
+   "variants": [],
+   "add_ons": []
+  },
+  {
+   "id": 72,
+   "restaurant_id": 9,
+   "restaurant_name": "Slice of Italy",
+   "name": "Choco Lava Cake",
+   "description": "Freshly made choco lava cake, just the way you like it.",
+   "price": 120,
+   "is_veg": true,
+   "image_url": null,
+   "emoji": "🍰",
+   "category": "Desserts",
+   "is_popular": false,
+   "variants": [],
+   "add_ons": []
+  },
+  {
+   "id": 73,
+   "restaurant_id": 10,
+   "restaurant_name": "Dum Pukht",
+   "name": "Veg Dum Biryani",
+   "description": "Freshly made veg dum biryani, just the way you like it.",
+   "price": 208,
+   "is_veg": true,
+   "image_url": null,
+   "emoji": "🍛",
+   "category": "Biryani",
+   "is_popular": true,
+   "variants": [
+    {
+     "id": 1,
+     "name": "Half",
+     "extra_price": 0
+    },
+    {
+     "id": 2,
+     "name": "Full",
+     "extra_price": 100
+    }
+   ],
+   "add_ons": [
+    {
+     "id": 103,
+     "name": "Raita",
+     "extra_price": 20
+    },
+    {
+     "id": 104,
+     "name": "Boiled Egg",
+     "extra_price": 15
+    },
+    {
+     "id": 105,
+     "name": "Extra Gravy",
+     "extra_price": 25
+    }
+   ]
+  },
+  {
+   "id": 74,
+   "restaurant_id": 10,
+   "restaurant_name": "Dum Pukht",
+   "name": "Paneer Tikka Biryani",
+   "description": "Freshly made paneer tikka biryani, just the way you like it.",
+   "price": 252,
+   "is_veg": true,
+   "image_url": null,
+   "emoji": "🍛",
+   "category": "Biryani",
+   "is_popular": false,
+   "variants": [
+    {
+     "id": 1,
+     "name": "Half",
+     "extra_price": 0
+    },
+    {
+     "id": 2,
+     "name": "Full",
+     "extra_price": 100
+    }
+   ],
+   "add_ons": [
+    {
+     "id": 103,
+     "name": "Raita",
+     "extra_price": 20
+    },
+    {
+     "id": 104,
+     "name": "Boiled Egg",
+     "extra_price": 15
+    },
+    {
+     "id": 105,
+     "name": "Extra Gravy",
+     "extra_price": 25
+    }
+   ]
+  },
+  {
+   "id": 75,
+   "restaurant_id": 10,
+   "restaurant_name": "Dum Pukht",
+   "name": "Chicken Dum Biryani",
+   "description": "Freshly made chicken dum biryani, just the way you like it.",
+   "price": 285,
+   "is_veg": false,
+   "image_url": null,
+   "emoji": "🍛",
+   "category": "Biryani",
+   "is_popular": false,
+   "variants": [
+    {
+     "id": 1,
+     "name": "Half",
+     "extra_price": 0
+    },
+    {
+     "id": 2,
+     "name": "Full",
+     "extra_price": 100
+    }
+   ],
+   "add_ons": [
+    {
+     "id": 103,
+     "name": "Raita",
+     "extra_price": 20
+    },
+    {
+     "id": 104,
+     "name": "Boiled Egg",
+     "extra_price": 15
+    },
+    {
+     "id": 105,
+     "name": "Extra Gravy",
+     "extra_price": 25
+    }
+   ]
+  },
+  {
+   "id": 76,
+   "restaurant_id": 10,
+   "restaurant_name": "Dum Pukht",
+   "name": "Mutton Biryani",
+   "description": "Freshly made mutton biryani, just the way you like it.",
+   "price": 362,
+   "is_veg": false,
+   "image_url": null,
+   "emoji": "🍛",
+   "category": "Biryani",
+   "is_popular": false,
+   "variants": [
+    {
+     "id": 1,
+     "name": "Half",
+     "extra_price": 0
+    },
+    {
+     "id": 2,
+     "name": "Full",
+     "extra_price": 100
+    }
+   ],
+   "add_ons": [
+    {
+     "id": 103,
+     "name": "Raita",
+     "extra_price": 20
+    },
+    {
+     "id": 104,
+     "name": "Boiled Egg",
+     "extra_price": 15
+    },
+    {
+     "id": 105,
+     "name": "Extra Gravy",
+     "extra_price": 25
+    }
+   ]
+  },
+  {
+   "id": 77,
+   "restaurant_id": 10,
+   "restaurant_name": "Dum Pukht",
+   "name": "Chicken 65",
+   "description": "Freshly made chicken 65, just the way you like it.",
+   "price": 208,
+   "is_veg": false,
+   "image_url": null,
+   "emoji": "🍗",
+   "category": "Starters",
+   "is_popular": false,
+   "variants": [],
+   "add_ons": []
+  },
+  {
+   "id": 78,
+   "restaurant_id": 10,
+   "restaurant_name": "Dum Pukht",
+   "name": "Paneer 65",
+   "description": "Freshly made paneer 65, just the way you like it.",
+   "price": 186,
+   "is_veg": true,
+   "image_url": null,
+   "emoji": "🧀",
+   "category": "Starters",
+   "is_popular": false,
+   "variants": [],
+   "add_ons": []
+  },
+  {
+   "id": 79,
+   "restaurant_id": 10,
+   "restaurant_name": "Dum Pukht",
+   "name": "Raita",
+   "description": "Freshly made raita, just the way you like it.",
+   "price": 43,
+   "is_veg": true,
+   "image_url": null,
+   "emoji": "🥣",
+   "category": "Sides",
+   "is_popular": false,
+   "variants": [],
+   "add_ons": []
+  },
+  {
+   "id": 80,
+   "restaurant_id": 10,
+   "restaurant_name": "Dum Pukht",
+   "name": "Gulab Jamun",
+   "description": "Freshly made gulab jamun, just the way you like it.",
+   "price": 76,
+   "is_veg": true,
+   "image_url": null,
+   "emoji": "🍮",
+   "category": "Desserts",
+   "is_popular": false,
+   "variants": [],
+   "add_ons": []
+  },
+  {
+   "id": 81,
+   "restaurant_id": 11,
+   "restaurant_name": "Patty Hub",
+   "name": "Aloo Tikki Burger",
+   "description": "Freshly made aloo tikki burger, just the way you like it.",
+   "price": 98,
+   "is_veg": true,
+   "image_url": null,
+   "emoji": "🍔",
+   "category": "Burgers",
+   "is_popular": true,
+   "variants": [],
+   "add_ons": [
+    {
+     "id": 106,
+     "name": "Extra Cheese Slice",
+     "extra_price": 20
+    },
+    {
+     "id": 107,
+     "name": "Extra Patty",
+     "extra_price": 60
+    }
+   ]
+  },
+  {
+   "id": 82,
+   "restaurant_id": 11,
+   "restaurant_name": "Patty Hub",
+   "name": "Veggie Supreme",
+   "description": "Freshly made veggie supreme, just the way you like it.",
+   "price": 153,
+   "is_veg": true,
+   "image_url": null,
+   "emoji": "🍔",
+   "category": "Burgers",
+   "is_popular": false,
+   "variants": [],
+   "add_ons": [
+    {
+     "id": 106,
+     "name": "Extra Cheese Slice",
+     "extra_price": 20
+    },
+    {
+     "id": 107,
+     "name": "Extra Patty",
+     "extra_price": 60
+    }
+   ]
+  },
+  {
+   "id": 83,
+   "restaurant_id": 11,
+   "restaurant_name": "Patty Hub",
+   "name": "Chicken Zinger",
+   "description": "Freshly made chicken zinger, just the way you like it.",
+   "price": 186,
+   "is_veg": false,
+   "image_url": null,
+   "emoji": "🍔",
+   "category": "Burgers",
+   "is_popular": false,
+   "variants": [],
+   "add_ons": [
+    {
+     "id": 106,
+     "name": "Extra Cheese Slice",
+     "extra_price": 20
+    },
+    {
+     "id": 107,
+     "name": "Extra Patty",
+     "extra_price": 60
+    }
+   ]
+  },
+  {
+   "id": 84,
+   "restaurant_id": 11,
+   "restaurant_name": "Patty Hub",
+   "name": "Double Cheese Chicken",
+   "description": "Freshly made double cheese chicken, just the way you like it.",
+   "price": 241,
+   "is_veg": false,
+   "image_url": null,
+   "emoji": "🍔",
+   "category": "Burgers",
+   "is_popular": false,
+   "variants": [],
+   "add_ons": [
+    {
+     "id": 106,
+     "name": "Extra Cheese Slice",
+     "extra_price": 20
+    },
+    {
+     "id": 107,
+     "name": "Extra Patty",
+     "extra_price": 60
+    }
+   ]
+  },
+  {
+   "id": 85,
+   "restaurant_id": 11,
+   "restaurant_name": "Patty Hub",
+   "name": "French Fries",
+   "description": "Freshly made french fries, just the way you like it.",
+   "price": 98,
+   "is_veg": true,
+   "image_url": null,
+   "emoji": "🍟",
+   "category": "Sides",
+   "is_popular": false,
+   "variants": [],
+   "add_ons": []
+  },
+  {
+   "id": 86,
+   "restaurant_id": 11,
+   "restaurant_name": "Patty Hub",
+   "name": "Peri Peri Fries",
+   "description": "Freshly made peri peri fries, just the way you like it.",
+   "price": 120,
+   "is_veg": true,
+   "image_url": null,
+   "emoji": "🍟",
+   "category": "Sides",
+   "is_popular": false,
+   "variants": [],
+   "add_ons": []
+  },
+  {
+   "id": 87,
+   "restaurant_id": 11,
+   "restaurant_name": "Patty Hub",
+   "name": "Cold Coffee",
+   "description": "Freshly made cold coffee, just the way you like it.",
+   "price": 131,
+   "is_veg": true,
+   "image_url": null,
+   "emoji": "🥤",
+   "category": "Beverages",
+   "is_popular": false,
+   "variants": [],
+   "add_ons": []
+  },
+  {
+   "id": 88,
+   "restaurant_id": 11,
+   "restaurant_name": "Patty Hub",
+   "name": "Chocolate Shake",
+   "description": "Freshly made chocolate shake, just the way you like it.",
+   "price": 153,
+   "is_veg": true,
+   "image_url": null,
+   "emoji": "🥛",
+   "category": "Beverages",
+   "is_popular": false,
+   "variants": [],
+   "add_ons": []
+  },
+  {
+   "id": 89,
+   "restaurant_id": 12,
+   "restaurant_name": "Dragon Bowl",
+   "name": "Veg Hakka Noodles",
+   "description": "Freshly made veg hakka noodles, just the way you like it.",
+   "price": 164,
+   "is_veg": true,
+   "image_url": null,
+   "emoji": "🍜",
+   "category": "Noodles",
+   "is_popular": true,
+   "variants": [
+    {
+     "id": 1,
+     "name": "Half",
+     "extra_price": 0
+    },
+    {
+     "id": 2,
+     "name": "Full",
+     "extra_price": 60
+    }
+   ],
+   "add_ons": [
+    {
+     "id": 108,
+     "name": "Extra Sauce",
+     "extra_price": 15
+    }
+   ]
+  },
+  {
+   "id": 90,
+   "restaurant_id": 12,
+   "restaurant_name": "Dragon Bowl",
+   "name": "Chicken Hakka Noodles",
+   "description": "Freshly made chicken hakka noodles, just the way you like it.",
+   "price": 208,
+   "is_veg": false,
+   "image_url": null,
+   "emoji": "🍜",
+   "category": "Noodles",
+   "is_popular": false,
+   "variants": [
+    {
+     "id": 1,
+     "name": "Half",
+     "extra_price": 0
+    },
+    {
+     "id": 2,
+     "name": "Full",
+     "extra_price": 60
+    }
+   ],
+   "add_ons": [
+    {
+     "id": 108,
+     "name": "Extra Sauce",
+     "extra_price": 15
+    }
+   ]
+  },
+  {
+   "id": 91,
+   "restaurant_id": 12,
+   "restaurant_name": "Dragon Bowl",
+   "name": "Veg Manchurian",
+   "description": "Freshly made veg manchurian, just the way you like it.",
+   "price": 175,
+   "is_veg": true,
+   "image_url": null,
+   "emoji": "🥡",
+   "category": "Starters",
+   "is_popular": false,
+   "variants": [],
+   "add_ons": [
+    {
+     "id": 108,
+     "name": "Extra Sauce",
+     "extra_price": 15
+    }
+   ]
+  },
+  {
+   "id": 92,
+   "restaurant_id": 12,
+   "restaurant_name": "Dragon Bowl",
+   "name": "Chilli Chicken",
+   "description": "Freshly made chilli chicken, just the way you like it.",
+   "price": 241,
+   "is_veg": false,
+   "image_url": null,
+   "emoji": "🍗",
+   "category": "Starters",
+   "is_popular": false,
+   "variants": [],
+   "add_ons": [
+    {
+     "id": 108,
+     "name": "Extra Sauce",
+     "extra_price": 15
+    }
+   ]
+  },
+  {
+   "id": 93,
+   "restaurant_id": 12,
+   "restaurant_name": "Dragon Bowl",
+   "name": "Schezwan Fried Rice",
+   "description": "Freshly made schezwan fried rice, just the way you like it.",
+   "price": 186,
+   "is_veg": true,
+   "image_url": null,
+   "emoji": "🍚",
+   "category": "Rice",
+   "is_popular": false,
+   "variants": [
+    {
+     "id": 1,
+     "name": "Half",
+     "extra_price": 0
+    },
+    {
+     "id": 2,
+     "name": "Full",
+     "extra_price": 60
+    }
+   ],
+   "add_ons": [
+    {
+     "id": 108,
+     "name": "Extra Sauce",
+     "extra_price": 15
+    }
+   ]
+  },
+  {
+   "id": 94,
+   "restaurant_id": 12,
+   "restaurant_name": "Dragon Bowl",
+   "name": "Chicken Fried Rice",
+   "description": "Freshly made chicken fried rice, just the way you like it.",
+   "price": 219,
+   "is_veg": false,
+   "image_url": null,
+   "emoji": "🍚",
+   "category": "Rice",
+   "is_popular": false,
+   "variants": [
+    {
+     "id": 1,
+     "name": "Half",
+     "extra_price": 0
+    },
+    {
+     "id": 2,
+     "name": "Full",
+     "extra_price": 60
+    }
+   ],
+   "add_ons": [
+    {
+     "id": 108,
+     "name": "Extra Sauce",
+     "extra_price": 15
+    }
+   ]
+  },
+  {
+   "id": 95,
+   "restaurant_id": 12,
+   "restaurant_name": "Dragon Bowl",
+   "name": "Spring Rolls",
+   "description": "Freshly made spring rolls, just the way you like it.",
+   "price": 142,
+   "is_veg": true,
+   "image_url": null,
+   "emoji": "🌯",
+   "category": "Starters",
+   "is_popular": false,
+   "variants": [],
+   "add_ons": [
+    {
+     "id": 108,
+     "name": "Extra Sauce",
+     "extra_price": 15
+    }
+   ]
+  },
+  {
+   "id": 96,
+   "restaurant_id": 12,
+   "restaurant_name": "Dragon Bowl",
+   "name": "Hot & Sour Soup",
+   "description": "Freshly made hot & sour soup, just the way you like it.",
+   "price": 109,
+   "is_veg": true,
+   "image_url": null,
+   "emoji": "🥣",
+   "category": "Soups",
+   "is_popular": false,
+   "variants": [],
+   "add_ons": []
+  },
+  {
+   "id": 97,
+   "restaurant_id": 13,
+   "restaurant_name": "Udupi Bhavan",
+   "name": "Masala Dosa",
+   "description": "Freshly made masala dosa, just the way you like it.",
+   "price": 109,
+   "is_veg": true,
+   "image_url": null,
+   "emoji": "🥞",
+   "category": "Dosa",
+   "is_popular": true,
+   "variants": [],
+   "add_ons": [
+    {
+     "id": 109,
+     "name": "Extra Chutney",
+     "extra_price": 10
+    },
+    {
+     "id": 110,
+     "name": "Butter",
+     "extra_price": 20
+    }
+   ]
+  },
+  {
+   "id": 98,
+   "restaurant_id": 13,
+   "restaurant_name": "Udupi Bhavan",
+   "name": "Mysore Masala Dosa",
+   "description": "Freshly made mysore masala dosa, just the way you like it.",
+   "price": 131,
+   "is_veg": true,
+   "image_url": null,
+   "emoji": "🥞",
+   "category": "Dosa",
+   "is_popular": false,
+   "variants": [],
+   "add_ons": [
+    {
+     "id": 109,
+     "name": "Extra Chutney",
+     "extra_price": 10
+    },
+    {
+     "id": 110,
+     "name": "Butter",
+     "extra_price": 20
+    }
+   ]
+  },
+  {
+   "id": 99,
+   "restaurant_id": 13,
+   "restaurant_name": "Udupi Bhavan",
+   "name": "Idli Sambar",
+   "description": "Freshly made idli sambar, just the way you like it.",
+   "price": 87,
+   "is_veg": true,
+   "image_url": null,
+   "emoji": "🍘",
+   "category": "Breakfast",
+   "is_popular": false,
+   "variants": [],
+   "add_ons": [
+    {
+     "id": 111,
+     "name": "Extra Sambar",
+     "extra_price": 15
+    }
+   ]
+  },
+  {
+   "id": 100,
+   "restaurant_id": 13,
+   "restaurant_name": "Udupi Bhavan",
+   "name": "Medu Vada",
+   "description": "Freshly made medu vada, just the way you like it.",
+   "price": 98,
+   "is_veg": true,
+   "image_url": null,
+   "emoji": "🍩",
+   "category": "Breakfast",
+   "is_popular": false,
+   "variants": [],
+   "add_ons": [
+    {
+     "id": 111,
+     "name": "Extra Sambar",
+     "extra_price": 15
+    }
+   ]
+  },
+  {
+   "id": 101,
+   "restaurant_id": 13,
+   "restaurant_name": "Udupi Bhavan",
+   "name": "Onion Uttapam",
+   "description": "Freshly made onion uttapam, just the way you like it.",
+   "price": 120,
+   "is_veg": true,
+   "image_url": null,
+   "emoji": "🥞",
+   "category": "Dosa",
+   "is_popular": false,
+   "variants": [],
+   "add_ons": [
+    {
+     "id": 109,
+     "name": "Extra Chutney",
+     "extra_price": 10
+    },
+    {
+     "id": 110,
+     "name": "Butter",
+     "extra_price": 20
+    }
+   ]
+  },
+  {
+   "id": 102,
+   "restaurant_id": 13,
+   "restaurant_name": "Udupi Bhavan",
+   "name": "Rava Upma",
+   "description": "Freshly made rava upma, just the way you like it.",
+   "price": 87,
+   "is_veg": true,
+   "image_url": null,
+   "emoji": "🍲",
+   "category": "Breakfast",
+   "is_popular": false,
+   "variants": [],
+   "add_ons": [
+    {
+     "id": 111,
+     "name": "Extra Sambar",
+     "extra_price": 15
+    }
+   ]
+  },
+  {
+   "id": 103,
+   "restaurant_id": 13,
+   "restaurant_name": "Udupi Bhavan",
+   "name": "Filter Coffee",
+   "description": "Freshly made filter coffee, just the way you like it.",
+   "price": 54,
+   "is_veg": true,
+   "image_url": null,
+   "emoji": "☕",
+   "category": "Beverages",
+   "is_popular": false,
+   "variants": [],
+   "add_ons": []
+  },
+  {
+   "id": 104,
+   "restaurant_id": 13,
+   "restaurant_name": "Udupi Bhavan",
+   "name": "Ven Pongal",
+   "description": "Freshly made ven pongal, just the way you like it.",
+   "price": 109,
+   "is_veg": true,
+   "image_url": null,
+   "emoji": "🍲",
+   "category": "Breakfast",
+   "is_popular": false,
+   "variants": [],
+   "add_ons": [
+    {
+     "id": 111,
+     "name": "Extra Sambar",
+     "extra_price": 15
+    }
+   ]
+  },
+  {
+   "id": 105,
+   "restaurant_id": 14,
+   "restaurant_name": "Cake Walk",
+   "name": "Chocolate Brownie",
+   "description": "Freshly made chocolate brownie, just the way you like it.",
+   "price": 142,
+   "is_veg": true,
+   "image_url": null,
+   "emoji": "🍫",
+   "category": "Cakes",
+   "is_popular": true,
+   "variants": [],
+   "add_ons": [
+    {
+     "id": 112,
+     "name": "Choco Sauce",
+     "extra_price": 20
+    }
+   ]
+  },
+  {
+   "id": 106,
+   "restaurant_id": 14,
+   "restaurant_name": "Cake Walk",
+   "name": "Red Velvet Pastry",
+   "description": "Freshly made red velvet pastry, just the way you like it.",
+   "price": 131,
+   "is_veg": true,
+   "image_url": null,
+   "emoji": "🍰",
+   "category": "Cakes",
+   "is_popular": false,
+   "variants": [],
+   "add_ons": [
+    {
+     "id": 112,
+     "name": "Choco Sauce",
+     "extra_price": 20
+    }
+   ]
+  },
+  {
+   "id": 107,
+   "restaurant_id": 14,
+   "restaurant_name": "Cake Walk",
+   "name": "Belgian Waffle",
+   "description": "Freshly made belgian waffle, just the way you like it.",
+   "price": 186,
+   "is_veg": true,
+   "image_url": null,
+   "emoji": "🧇",
+   "category": "Waffles",
+   "is_popular": false,
+   "variants": [],
+   "add_ons": [
+    {
+     "id": 112,
+     "name": "Choco Sauce",
+     "extra_price": 20
+    },
+    {
+     "id": 113,
+     "name": "Extra Scoop",
+     "extra_price": 40
+    }
+   ]
+  },
+  {
+   "id": 108,
+   "restaurant_id": 14,
+   "restaurant_name": "Cake Walk",
+   "name": "Choco Sundae",
+   "description": "Freshly made choco sundae, just the way you like it.",
+   "price": 164,
+   "is_veg": true,
+   "image_url": null,
+   "emoji": "🍨",
+   "category": "Ice Cream",
+   "is_popular": false,
+   "variants": [],
+   "add_ons": [
+    {
+     "id": 113,
+     "name": "Extra Scoop",
+     "extra_price": 40
+    },
+    {
+     "id": 112,
+     "name": "Choco Sauce",
+     "extra_price": 20
+    }
+   ]
+  },
+  {
+   "id": 109,
+   "restaurant_id": 14,
+   "restaurant_name": "Cake Walk",
+   "name": "Vanilla Scoop",
+   "description": "Freshly made vanilla scoop, just the way you like it.",
+   "price": 76,
+   "is_veg": true,
+   "image_url": null,
+   "emoji": "🍦",
+   "category": "Ice Cream",
+   "is_popular": false,
+   "variants": [],
+   "add_ons": [
+    {
+     "id": 113,
+     "name": "Extra Scoop",
+     "extra_price": 40
+    },
+    {
+     "id": 112,
+     "name": "Choco Sauce",
+     "extra_price": 20
+    }
+   ]
+  },
+  {
+   "id": 110,
+   "restaurant_id": 14,
+   "restaurant_name": "Cake Walk",
+   "name": "Oreo Shake",
+   "description": "Freshly made oreo shake, just the way you like it.",
+   "price": 175,
+   "is_veg": true,
+   "image_url": null,
+   "emoji": "🥛",
+   "category": "Shakes",
+   "is_popular": false,
+   "variants": [],
+   "add_ons": []
+  },
+  {
+   "id": 111,
+   "restaurant_id": 14,
+   "restaurant_name": "Cake Walk",
+   "name": "Glazed Donut",
+   "description": "Freshly made glazed donut, just the way you like it.",
+   "price": 98,
+   "is_veg": true,
+   "image_url": null,
+   "emoji": "🍩",
+   "category": "Bakery",
+   "is_popular": false,
+   "variants": [],
+   "add_ons": []
+  },
+  {
+   "id": 112,
+   "restaurant_id": 14,
+   "restaurant_name": "Cake Walk",
+   "name": "Rasmalai",
+   "description": "Freshly made rasmalai, just the way you like it.",
+   "price": 109,
+   "is_veg": true,
+   "image_url": null,
+   "emoji": "🍮",
+   "category": "Indian Sweets",
+   "is_popular": false,
+   "variants": [],
+   "add_ons": []
+  },
+  {
+   "id": 113,
+   "restaurant_id": 15,
+   "restaurant_name": "Fit Kitchen",
+   "name": "Greek Salad",
+   "description": "Freshly made greek salad, just the way you like it.",
+   "price": 219,
+   "is_veg": true,
+   "image_url": null,
+   "emoji": "🥗",
+   "category": "Salads",
+   "is_popular": true,
+   "variants": [],
+   "add_ons": [
+    {
+     "id": 114,
+     "name": "Extra Dressing",
+     "extra_price": 15
+    },
+    {
+     "id": 115,
+     "name": "Add Egg",
+     "extra_price": 20
+    }
+   ]
+  },
+  {
+   "id": 114,
+   "restaurant_id": 15,
+   "restaurant_name": "Fit Kitchen",
+   "name": "Chicken Caesar Salad",
+   "description": "Freshly made chicken caesar salad, just the way you like it.",
+   "price": 263,
+   "is_veg": false,
+   "image_url": null,
+   "emoji": "🥗",
+   "category": "Salads",
+   "is_popular": false,
+   "variants": [],
+   "add_ons": [
+    {
+     "id": 114,
+     "name": "Extra Dressing",
+     "extra_price": 15
+    },
+    {
+     "id": 115,
+     "name": "Add Egg",
+     "extra_price": 20
+    }
+   ]
+  },
+  {
+   "id": 115,
+   "restaurant_id": 15,
+   "restaurant_name": "Fit Kitchen",
+   "name": "Quinoa Bowl",
+   "description": "Freshly made quinoa bowl, just the way you like it.",
+   "price": 285,
+   "is_veg": true,
+   "image_url": null,
+   "emoji": "🥣",
+   "category": "Bowls",
+   "is_popular": false,
+   "variants": [],
+   "add_ons": [
+    {
+     "id": 114,
+     "name": "Extra Dressing",
+     "extra_price": 15
+    },
+    {
+     "id": 115,
+     "name": "Add Egg",
+     "extra_price": 20
+    }
+   ]
+  },
+  {
+   "id": 116,
+   "restaurant_id": 15,
+   "restaurant_name": "Fit Kitchen",
+   "name": "Grilled Chicken Bowl",
+   "description": "Freshly made grilled chicken bowl, just the way you like it.",
+   "price": 329,
+   "is_veg": false,
+   "image_url": null,
+   "emoji": "🍱",
+   "category": "Bowls",
+   "is_popular": false,
+   "variants": [],
+   "add_ons": [
+    {
+     "id": 114,
+     "name": "Extra Dressing",
+     "extra_price": 15
+    },
+    {
+     "id": 115,
+     "name": "Add Egg",
+     "extra_price": 20
+    }
+   ]
+  },
+  {
+   "id": 117,
+   "restaurant_id": 15,
+   "restaurant_name": "Fit Kitchen",
+   "name": "Avocado Toast",
+   "description": "Freshly made avocado toast, just the way you like it.",
+   "price": 197,
+   "is_veg": true,
+   "image_url": null,
+   "emoji": "🥑",
+   "category": "Breakfast",
+   "is_popular": false,
+   "variants": [],
+   "add_ons": []
+  },
+  {
+   "id": 118,
+   "restaurant_id": 15,
+   "restaurant_name": "Fit Kitchen",
+   "name": "Fruit Bowl",
+   "description": "Freshly made fruit bowl, just the way you like it.",
+   "price": 164,
+   "is_veg": true,
+   "image_url": null,
+   "emoji": "🍓",
+   "category": "Breakfast",
+   "is_popular": false,
+   "variants": [],
+   "add_ons": []
+  },
+  {
+   "id": 119,
+   "restaurant_id": 15,
+   "restaurant_name": "Fit Kitchen",
+   "name": "Green Smoothie",
+   "description": "Freshly made green smoothie, just the way you like it.",
+   "price": 164,
+   "is_veg": true,
+   "image_url": null,
+   "emoji": "🥤",
+   "category": "Smoothies",
+   "is_popular": false,
+   "variants": [],
+   "add_ons": []
+  },
+  {
+   "id": 120,
+   "restaurant_id": 15,
+   "restaurant_name": "Fit Kitchen",
+   "name": "Protein Shake",
+   "description": "Freshly made protein shake, just the way you like it.",
+   "price": 208,
+   "is_veg": true,
+   "image_url": null,
+   "emoji": "🥛",
+   "category": "Smoothies",
+   "is_popular": false,
+   "variants": [],
+   "add_ons": []
+  },
+  {
+   "id": 121,
+   "restaurant_id": 16,
+   "restaurant_name": "Kathi Junction",
+   "name": "Paneer Tikka Roll",
+   "description": "Freshly made paneer tikka roll, just the way you like it.",
+   "price": 142,
+   "is_veg": true,
+   "image_url": null,
+   "emoji": "🌯",
+   "category": "Rolls",
+   "is_popular": true,
+   "variants": [],
+   "add_ons": [
+    {
+     "id": 100,
+     "name": "Extra Cheese",
+     "extra_price": 20
+    },
+    {
+     "id": 116,
+     "name": "Extra Egg",
+     "extra_price": 15
+    }
+   ]
+  },
+  {
+   "id": 122,
+   "restaurant_id": 16,
+   "restaurant_name": "Kathi Junction",
+   "name": "Veg Kathi Roll",
+   "description": "Freshly made veg kathi roll, just the way you like it.",
+   "price": 109,
+   "is_veg": true,
+   "image_url": null,
+   "emoji": "🌯",
+   "category": "Rolls",
+   "is_popular": false,
+   "variants": [],
+   "add_ons": [
+    {
+     "id": 100,
+     "name": "Extra Cheese",
+     "extra_price": 20
+    },
+    {
+     "id": 116,
+     "name": "Extra Egg",
+     "extra_price": 15
+    }
+   ]
+  },
+  {
+   "id": 123,
+   "restaurant_id": 16,
+   "restaurant_name": "Kathi Junction",
+   "name": "Egg Roll",
+   "description": "Freshly made egg roll, just the way you like it.",
+   "price": 120,
+   "is_veg": false,
+   "image_url": null,
+   "emoji": "🥚",
+   "category": "Rolls",
+   "is_popular": false,
+   "variants": [],
+   "add_ons": [
+    {
+     "id": 100,
+     "name": "Extra Cheese",
+     "extra_price": 20
+    },
+    {
+     "id": 116,
+     "name": "Extra Egg",
+     "extra_price": 15
+    }
+   ]
+  },
+  {
+   "id": 124,
+   "restaurant_id": 16,
+   "restaurant_name": "Kathi Junction",
+   "name": "Chicken Tikka Roll",
+   "description": "Freshly made chicken tikka roll, just the way you like it.",
+   "price": 175,
+   "is_veg": false,
+   "image_url": null,
+   "emoji": "🌯",
+   "category": "Rolls",
+   "is_popular": false,
+   "variants": [],
+   "add_ons": [
+    {
+     "id": 100,
+     "name": "Extra Cheese",
+     "extra_price": 20
+    },
+    {
+     "id": 116,
+     "name": "Extra Egg",
+     "extra_price": 15
+    }
+   ]
+  },
+  {
+   "id": 125,
+   "restaurant_id": 16,
+   "restaurant_name": "Kathi Junction",
+   "name": "Mutton Seekh Roll",
+   "description": "Freshly made mutton seekh roll, just the way you like it.",
+   "price": 208,
+   "is_veg": false,
+   "image_url": null,
+   "emoji": "🌯",
+   "category": "Rolls",
+   "is_popular": false,
+   "variants": [],
+   "add_ons": [
+    {
+     "id": 100,
+     "name": "Extra Cheese",
+     "extra_price": 20
+    },
+    {
+     "id": 116,
+     "name": "Extra Egg",
+     "extra_price": 15
+    }
+   ]
+  },
+  {
+   "id": 126,
+   "restaurant_id": 16,
+   "restaurant_name": "Kathi Junction",
+   "name": "Chicken Momos",
+   "description": "Freshly made chicken momos, just the way you like it.",
+   "price": 142,
+   "is_veg": false,
+   "image_url": null,
+   "emoji": "🥟",
+   "category": "Momos",
+   "is_popular": false,
+   "variants": [],
+   "add_ons": []
+  },
+  {
+   "id": 127,
+   "restaurant_id": 16,
+   "restaurant_name": "Kathi Junction",
+   "name": "Veg Momos",
+   "description": "Freshly made veg momos, just the way you like it.",
+   "price": 109,
+   "is_veg": true,
+   "image_url": null,
+   "emoji": "🥟",
+   "category": "Momos",
+   "is_popular": false,
+   "variants": [],
+   "add_ons": []
+  },
+  {
+   "id": 128,
+   "restaurant_id": 16,
+   "restaurant_name": "Kathi Junction",
+   "name": "Lime Soda",
+   "description": "Freshly made lime soda, just the way you like it.",
+   "price": 65,
+   "is_veg": true,
+   "image_url": null,
+   "emoji": "🍋",
+   "category": "Beverages",
+   "is_popular": false,
+   "variants": [],
+   "add_ons": []
+  },
+  {
+   "id": 129,
+   "restaurant_id": 17,
+   "restaurant_name": "Cheesy Crust",
+   "name": "Margherita",
+   "description": "Freshly made margherita, just the way you like it.",
+   "price": 189,
+   "is_veg": true,
+   "image_url": null,
+   "emoji": "🍕",
+   "category": "Pizzas",
+   "is_popular": true,
+   "variants": [
+    {
+     "id": 1,
+     "name": "Small",
+     "extra_price": 0
+    },
+    {
+     "id": 2,
+     "name": "Medium",
+     "extra_price": 80
+    },
+    {
+     "id": 3,
+     "name": "Large",
+     "extra_price": 160
+    }
+   ],
+   "add_ons": [
+    {
+     "id": 100,
+     "name": "Extra Cheese",
+     "extra_price": 30
+    },
+    {
+     "id": 101,
+     "name": "Jalapeno",
+     "extra_price": 20
+    },
+    {
+     "id": 102,
+     "name": "Olives",
+     "extra_price": 25
+    }
+   ]
+  },
+  {
+   "id": 130,
+   "restaurant_id": 17,
+   "restaurant_name": "Cheesy Crust",
+   "name": "Farmhouse",
+   "description": "Freshly made farmhouse, just the way you like it.",
+   "price": 284,
+   "is_veg": true,
+   "image_url": null,
+   "emoji": "🍕",
+   "category": "Pizzas",
+   "is_popular": false,
+   "variants": [
+    {
+     "id": 1,
+     "name": "Small",
+     "extra_price": 0
+    },
+    {
+     "id": 2,
+     "name": "Medium",
+     "extra_price": 80
+    },
+    {
+     "id": 3,
+     "name": "Large",
+     "extra_price": 160
+    }
+   ],
+   "add_ons": [
+    {
+     "id": 100,
+     "name": "Extra Cheese",
+     "extra_price": 30
+    },
+    {
+     "id": 101,
+     "name": "Jalapeno",
+     "extra_price": 20
+    },
+    {
+     "id": 102,
+     "name": "Olives",
+     "extra_price": 25
+    }
+   ]
+  },
+  {
+   "id": 131,
+   "restaurant_id": 17,
+   "restaurant_name": "Cheesy Crust",
+   "name": "Pepperoni",
+   "description": "Freshly made pepperoni, just the way you like it.",
+   "price": 332,
+   "is_veg": false,
+   "image_url": null,
+   "emoji": "🍕",
+   "category": "Pizzas",
+   "is_popular": false,
+   "variants": [
+    {
+     "id": 1,
+     "name": "Small",
+     "extra_price": 0
+    },
+    {
+     "id": 2,
+     "name": "Medium",
+     "extra_price": 80
+    },
+    {
+     "id": 3,
+     "name": "Large",
+     "extra_price": 160
+    }
+   ],
+   "add_ons": [
+    {
+     "id": 100,
+     "name": "Extra Cheese",
+     "extra_price": 30
+    },
+    {
+     "id": 101,
+     "name": "Jalapeno",
+     "extra_price": 20
+    },
+    {
+     "id": 102,
+     "name": "Olives",
+     "extra_price": 25
+    }
+   ]
+  },
+  {
+   "id": 132,
+   "restaurant_id": 17,
+   "restaurant_name": "Cheesy Crust",
+   "name": "BBQ Chicken Pizza",
+   "description": "Freshly made bbq chicken pizza, just the way you like it.",
+   "price": 351,
+   "is_veg": false,
+   "image_url": null,
+   "emoji": "🍕",
+   "category": "Pizzas",
+   "is_popular": false,
+   "variants": [
+    {
+     "id": 1,
+     "name": "Small",
+     "extra_price": 0
+    },
+    {
+     "id": 2,
+     "name": "Medium",
+     "extra_price": 80
+    },
+    {
+     "id": 3,
+     "name": "Large",
+     "extra_price": 160
+    }
+   ],
+   "add_ons": [
+    {
+     "id": 100,
+     "name": "Extra Cheese",
+     "extra_price": 30
+    },
+    {
+     "id": 101,
+     "name": "Jalapeno",
+     "extra_price": 20
+    },
+    {
+     "id": 102,
+     "name": "Olives",
+     "extra_price": 25
+    }
+   ]
+  },
+  {
+   "id": 133,
+   "restaurant_id": 17,
+   "restaurant_name": "Cheesy Crust",
+   "name": "Garlic Bread",
+   "description": "Freshly made garlic bread, just the way you like it.",
+   "price": 94,
+   "is_veg": true,
+   "image_url": null,
+   "emoji": "🥖",
+   "category": "Sides",
+   "is_popular": false,
+   "variants": [],
+   "add_ons": []
+  },
+  {
+   "id": 134,
+   "restaurant_id": 17,
+   "restaurant_name": "Cheesy Crust",
+   "name": "Stuffed Garlic Bread",
+   "description": "Freshly made stuffed garlic bread, just the way you like it.",
+   "price": 142,
+   "is_veg": true,
+   "image_url": null,
+   "emoji": "🥖",
+   "category": "Sides",
+   "is_popular": false,
+   "variants": [],
+   "add_ons": []
+  },
+  {
+   "id": 135,
+   "restaurant_id": 17,
+   "restaurant_name": "Cheesy Crust",
+   "name": "Coke",
+   "description": "Freshly made coke, just the way you like it.",
+   "price": 57,
+   "is_veg": true,
+   "image_url": null,
+   "emoji": "🥤",
+   "category": "Beverages",
+   "is_popular": false,
+   "variants": [],
+   "add_ons": []
+  },
+  {
+   "id": 136,
+   "restaurant_id": 17,
+   "restaurant_name": "Cheesy Crust",
+   "name": "Choco Lava Cake",
+   "description": "Freshly made choco lava cake, just the way you like it.",
+   "price": 104,
+   "is_veg": true,
+   "image_url": null,
+   "emoji": "🍰",
+   "category": "Desserts",
+   "is_popular": false,
+   "variants": [],
+   "add_ons": []
+  },
+  {
+   "id": 137,
+   "restaurant_id": 18,
+   "restaurant_name": "Hyderabad Handi",
+   "name": "Veg Dum Biryani",
+   "description": "Freshly made veg dum biryani, just the way you like it.",
+   "price": 180,
+   "is_veg": true,
+   "image_url": null,
+   "emoji": "🍛",
+   "category": "Biryani",
+   "is_popular": true,
+   "variants": [
+    {
+     "id": 1,
+     "name": "Half",
+     "extra_price": 0
+    },
+    {
+     "id": 2,
+     "name": "Full",
+     "extra_price": 100
+    }
+   ],
+   "add_ons": [
+    {
+     "id": 103,
+     "name": "Raita",
+     "extra_price": 20
+    },
+    {
+     "id": 104,
+     "name": "Boiled Egg",
+     "extra_price": 15
+    },
+    {
+     "id": 105,
+     "name": "Extra Gravy",
+     "extra_price": 25
+    }
+   ]
+  },
+  {
+   "id": 138,
+   "restaurant_id": 18,
+   "restaurant_name": "Hyderabad Handi",
+   "name": "Paneer Tikka Biryani",
+   "description": "Freshly made paneer tikka biryani, just the way you like it.",
+   "price": 218,
+   "is_veg": true,
+   "image_url": null,
+   "emoji": "🍛",
+   "category": "Biryani",
+   "is_popular": false,
+   "variants": [
+    {
+     "id": 1,
+     "name": "Half",
+     "extra_price": 0
+    },
+    {
+     "id": 2,
+     "name": "Full",
+     "extra_price": 100
+    }
+   ],
+   "add_ons": [
+    {
+     "id": 103,
+     "name": "Raita",
+     "extra_price": 20
+    },
+    {
+     "id": 104,
+     "name": "Boiled Egg",
+     "extra_price": 15
+    },
+    {
+     "id": 105,
+     "name": "Extra Gravy",
+     "extra_price": 25
+    }
+   ]
+  },
+  {
+   "id": 139,
+   "restaurant_id": 18,
+   "restaurant_name": "Hyderabad Handi",
+   "name": "Chicken Dum Biryani",
+   "description": "Freshly made chicken dum biryani, just the way you like it.",
+   "price": 246,
+   "is_veg": false,
+   "image_url": null,
+   "emoji": "🍛",
+   "category": "Biryani",
+   "is_popular": false,
+   "variants": [
+    {
+     "id": 1,
+     "name": "Half",
+     "extra_price": 0
+    },
+    {
+     "id": 2,
+     "name": "Full",
+     "extra_price": 100
+    }
+   ],
+   "add_ons": [
+    {
+     "id": 103,
+     "name": "Raita",
+     "extra_price": 20
+    },
+    {
+     "id": 104,
+     "name": "Boiled Egg",
+     "extra_price": 15
+    },
+    {
+     "id": 105,
+     "name": "Extra Gravy",
+     "extra_price": 25
+    }
+   ]
+  },
+  {
+   "id": 140,
+   "restaurant_id": 18,
+   "restaurant_name": "Hyderabad Handi",
+   "name": "Mutton Biryani",
+   "description": "Freshly made mutton biryani, just the way you like it.",
+   "price": 313,
+   "is_veg": false,
+   "image_url": null,
+   "emoji": "🍛",
+   "category": "Biryani",
+   "is_popular": false,
+   "variants": [
+    {
+     "id": 1,
+     "name": "Half",
+     "extra_price": 0
+    },
+    {
+     "id": 2,
+     "name": "Full",
+     "extra_price": 100
+    }
+   ],
+   "add_ons": [
+    {
+     "id": 103,
+     "name": "Raita",
+     "extra_price": 20
+    },
+    {
+     "id": 104,
+     "name": "Boiled Egg",
+     "extra_price": 15
+    },
+    {
+     "id": 105,
+     "name": "Extra Gravy",
+     "extra_price": 25
+    }
+   ]
+  },
+  {
+   "id": 141,
+   "restaurant_id": 18,
+   "restaurant_name": "Hyderabad Handi",
+   "name": "Chicken 65",
+   "description": "Freshly made chicken 65, just the way you like it.",
+   "price": 180,
+   "is_veg": false,
+   "image_url": null,
+   "emoji": "🍗",
+   "category": "Starters",
+   "is_popular": false,
+   "variants": [],
+   "add_ons": []
+  },
+  {
+   "id": 142,
+   "restaurant_id": 18,
+   "restaurant_name": "Hyderabad Handi",
+   "name": "Paneer 65",
+   "description": "Freshly made paneer 65, just the way you like it.",
+   "price": 161,
+   "is_veg": true,
+   "image_url": null,
+   "emoji": "🧀",
+   "category": "Starters",
+   "is_popular": false,
+   "variants": [],
+   "add_ons": []
+  },
+  {
+   "id": 143,
+   "restaurant_id": 18,
+   "restaurant_name": "Hyderabad Handi",
+   "name": "Raita",
+   "description": "Freshly made raita, just the way you like it.",
+   "price": 37,
+   "is_veg": true,
+   "image_url": null,
+   "emoji": "🥣",
+   "category": "Sides",
+   "is_popular": false,
+   "variants": [],
+   "add_ons": []
+  },
+  {
+   "id": 144,
+   "restaurant_id": 18,
+   "restaurant_name": "Hyderabad Handi",
+   "name": "Gulab Jamun",
+   "description": "Freshly made gulab jamun, just the way you like it.",
+   "price": 66,
+   "is_veg": true,
+   "image_url": null,
+   "emoji": "🍮",
+   "category": "Desserts",
+   "is_popular": false,
+   "variants": [],
+   "add_ons": []
+  },
+  {
+   "id": 145,
+   "restaurant_id": 19,
+   "restaurant_name": "Big Bite",
+   "name": "Aloo Tikki Burger",
+   "description": "Freshly made aloo tikki burger, just the way you like it.",
+   "price": 85,
+   "is_veg": true,
+   "image_url": null,
+   "emoji": "🍔",
+   "category": "Burgers",
+   "is_popular": true,
+   "variants": [],
+   "add_ons": [
+    {
+     "id": 106,
+     "name": "Extra Cheese Slice",
+     "extra_price": 20
+    },
+    {
+     "id": 107,
+     "name": "Extra Patty",
+     "extra_price": 60
+    }
+   ]
+  },
+  {
+   "id": 146,
+   "restaurant_id": 19,
+   "restaurant_name": "Big Bite",
+   "name": "Veggie Supreme",
+   "description": "Freshly made veggie supreme, just the way you like it.",
+   "price": 132,
+   "is_veg": true,
+   "image_url": null,
+   "emoji": "🍔",
+   "category": "Burgers",
+   "is_popular": false,
+   "variants": [],
+   "add_ons": [
+    {
+     "id": 106,
+     "name": "Extra Cheese Slice",
+     "extra_price": 20
+    },
+    {
+     "id": 107,
+     "name": "Extra Patty",
+     "extra_price": 60
+    }
+   ]
+  },
+  {
+   "id": 147,
+   "restaurant_id": 19,
+   "restaurant_name": "Big Bite",
+   "name": "Chicken Zinger",
+   "description": "Freshly made chicken zinger, just the way you like it.",
+   "price": 161,
+   "is_veg": false,
+   "image_url": null,
+   "emoji": "🍔",
+   "category": "Burgers",
+   "is_popular": false,
+   "variants": [],
+   "add_ons": [
+    {
+     "id": 106,
+     "name": "Extra Cheese Slice",
+     "extra_price": 20
+    },
+    {
+     "id": 107,
+     "name": "Extra Patty",
+     "extra_price": 60
+    }
+   ]
+  },
+  {
+   "id": 148,
+   "restaurant_id": 19,
+   "restaurant_name": "Big Bite",
+   "name": "Double Cheese Chicken",
+   "description": "Freshly made double cheese chicken, just the way you like it.",
+   "price": 208,
+   "is_veg": false,
+   "image_url": null,
+   "emoji": "🍔",
+   "category": "Burgers",
+   "is_popular": false,
+   "variants": [],
+   "add_ons": [
+    {
+     "id": 106,
+     "name": "Extra Cheese Slice",
+     "extra_price": 20
+    },
+    {
+     "id": 107,
+     "name": "Extra Patty",
+     "extra_price": 60
+    }
+   ]
+  },
+  {
+   "id": 149,
+   "restaurant_id": 19,
+   "restaurant_name": "Big Bite",
+   "name": "French Fries",
+   "description": "Freshly made french fries, just the way you like it.",
+   "price": 85,
+   "is_veg": true,
+   "image_url": null,
+   "emoji": "🍟",
+   "category": "Sides",
+   "is_popular": false,
+   "variants": [],
+   "add_ons": []
+  },
+  {
+   "id": 150,
+   "restaurant_id": 19,
+   "restaurant_name": "Big Bite",
+   "name": "Peri Peri Fries",
+   "description": "Freshly made peri peri fries, just the way you like it.",
+   "price": 104,
+   "is_veg": true,
+   "image_url": null,
+   "emoji": "🍟",
+   "category": "Sides",
+   "is_popular": false,
+   "variants": [],
+   "add_ons": []
+  },
+  {
+   "id": 151,
+   "restaurant_id": 19,
+   "restaurant_name": "Big Bite",
+   "name": "Cold Coffee",
+   "description": "Freshly made cold coffee, just the way you like it.",
+   "price": 113,
+   "is_veg": true,
+   "image_url": null,
+   "emoji": "🥤",
+   "category": "Beverages",
+   "is_popular": false,
+   "variants": [],
+   "add_ons": []
+  },
+  {
+   "id": 152,
+   "restaurant_id": 19,
+   "restaurant_name": "Big Bite",
+   "name": "Chocolate Shake",
+   "description": "Freshly made chocolate shake, just the way you like it.",
+   "price": 132,
+   "is_veg": true,
+   "image_url": null,
+   "emoji": "🥛",
+   "category": "Beverages",
+   "is_popular": false,
+   "variants": [],
+   "add_ons": []
+  },
+  {
+   "id": 153,
+   "restaurant_id": 20,
+   "restaurant_name": "China Town",
+   "name": "Veg Hakka Noodles",
+   "description": "Freshly made veg hakka noodles, just the way you like it.",
+   "price": 142,
+   "is_veg": true,
+   "image_url": null,
+   "emoji": "🍜",
+   "category": "Noodles",
+   "is_popular": true,
+   "variants": [
+    {
+     "id": 1,
+     "name": "Half",
+     "extra_price": 0
+    },
+    {
+     "id": 2,
+     "name": "Full",
+     "extra_price": 60
+    }
+   ],
+   "add_ons": [
+    {
+     "id": 108,
+     "name": "Extra Sauce",
+     "extra_price": 15
+    }
+   ]
+  },
+  {
+   "id": 154,
+   "restaurant_id": 20,
+   "restaurant_name": "China Town",
+   "name": "Chicken Hakka Noodles",
+   "description": "Freshly made chicken hakka noodles, just the way you like it.",
+   "price": 180,
+   "is_veg": false,
+   "image_url": null,
+   "emoji": "🍜",
+   "category": "Noodles",
+   "is_popular": false,
+   "variants": [
+    {
+     "id": 1,
+     "name": "Half",
+     "extra_price": 0
+    },
+    {
+     "id": 2,
+     "name": "Full",
+     "extra_price": 60
+    }
+   ],
+   "add_ons": [
+    {
+     "id": 108,
+     "name": "Extra Sauce",
+     "extra_price": 15
+    }
+   ]
+  },
+  {
+   "id": 155,
+   "restaurant_id": 20,
+   "restaurant_name": "China Town",
+   "name": "Veg Manchurian",
+   "description": "Freshly made veg manchurian, just the way you like it.",
+   "price": 151,
+   "is_veg": true,
+   "image_url": null,
+   "emoji": "🥡",
+   "category": "Starters",
+   "is_popular": false,
+   "variants": [],
+   "add_ons": [
+    {
+     "id": 108,
+     "name": "Extra Sauce",
+     "extra_price": 15
+    }
+   ]
+  },
+  {
+   "id": 156,
+   "restaurant_id": 20,
+   "restaurant_name": "China Town",
+   "name": "Chilli Chicken",
+   "description": "Freshly made chilli chicken, just the way you like it.",
+   "price": 208,
+   "is_veg": false,
+   "image_url": null,
+   "emoji": "🍗",
+   "category": "Starters",
+   "is_popular": false,
+   "variants": [],
+   "add_ons": [
+    {
+     "id": 108,
+     "name": "Extra Sauce",
+     "extra_price": 15
+    }
+   ]
+  },
+  {
+   "id": 157,
+   "restaurant_id": 20,
+   "restaurant_name": "China Town",
+   "name": "Schezwan Fried Rice",
+   "description": "Freshly made schezwan fried rice, just the way you like it.",
+   "price": 161,
+   "is_veg": true,
+   "image_url": null,
+   "emoji": "🍚",
+   "category": "Rice",
+   "is_popular": false,
+   "variants": [
+    {
+     "id": 1,
+     "name": "Half",
+     "extra_price": 0
+    },
+    {
+     "id": 2,
+     "name": "Full",
+     "extra_price": 60
+    }
+   ],
+   "add_ons": [
+    {
+     "id": 108,
+     "name": "Extra Sauce",
+     "extra_price": 15
+    }
+   ]
+  },
+  {
+   "id": 158,
+   "restaurant_id": 20,
+   "restaurant_name": "China Town",
+   "name": "Chicken Fried Rice",
+   "description": "Freshly made chicken fried rice, just the way you like it.",
+   "price": 189,
+   "is_veg": false,
+   "image_url": null,
+   "emoji": "🍚",
+   "category": "Rice",
+   "is_popular": false,
+   "variants": [
+    {
+     "id": 1,
+     "name": "Half",
+     "extra_price": 0
+    },
+    {
+     "id": 2,
+     "name": "Full",
+     "extra_price": 60
+    }
+   ],
+   "add_ons": [
+    {
+     "id": 108,
+     "name": "Extra Sauce",
+     "extra_price": 15
+    }
+   ]
+  },
+  {
+   "id": 159,
+   "restaurant_id": 20,
+   "restaurant_name": "China Town",
+   "name": "Spring Rolls",
+   "description": "Freshly made spring rolls, just the way you like it.",
+   "price": 123,
+   "is_veg": true,
+   "image_url": null,
+   "emoji": "🌯",
+   "category": "Starters",
+   "is_popular": false,
+   "variants": [],
+   "add_ons": [
+    {
+     "id": 108,
+     "name": "Extra Sauce",
+     "extra_price": 15
+    }
+   ]
+  },
+  {
+   "id": 160,
+   "restaurant_id": 20,
+   "restaurant_name": "China Town",
+   "name": "Hot & Sour Soup",
+   "description": "Freshly made hot & sour soup, just the way you like it.",
+   "price": 94,
+   "is_veg": true,
+   "image_url": null,
+   "emoji": "🥣",
+   "category": "Soups",
+   "is_popular": false,
+   "variants": [],
+   "add_ons": []
+  },
+  {
+   "id": 161,
+   "restaurant_id": 21,
+   "restaurant_name": "Madras Cafe",
+   "name": "Masala Dosa",
+   "description": "Freshly made masala dosa, just the way you like it.",
+   "price": 94,
+   "is_veg": true,
+   "image_url": null,
+   "emoji": "🥞",
+   "category": "Dosa",
+   "is_popular": true,
+   "variants": [],
+   "add_ons": [
+    {
+     "id": 109,
+     "name": "Extra Chutney",
+     "extra_price": 10
+    },
+    {
+     "id": 110,
+     "name": "Butter",
+     "extra_price": 20
+    }
+   ]
+  },
+  {
+   "id": 162,
+   "restaurant_id": 21,
+   "restaurant_name": "Madras Cafe",
+   "name": "Mysore Masala Dosa",
+   "description": "Freshly made mysore masala dosa, just the way you like it.",
+   "price": 113,
+   "is_veg": true,
+   "image_url": null,
+   "emoji": "🥞",
+   "category": "Dosa",
+   "is_popular": false,
+   "variants": [],
+   "add_ons": [
+    {
+     "id": 109,
+     "name": "Extra Chutney",
+     "extra_price": 10
+    },
+    {
+     "id": 110,
+     "name": "Butter",
+     "extra_price": 20
+    }
+   ]
+  },
+  {
+   "id": 163,
+   "restaurant_id": 21,
+   "restaurant_name": "Madras Cafe",
+   "name": "Idli Sambar",
+   "description": "Freshly made idli sambar, just the way you like it.",
+   "price": 75,
+   "is_veg": true,
+   "image_url": null,
+   "emoji": "🍘",
+   "category": "Breakfast",
+   "is_popular": false,
+   "variants": [],
+   "add_ons": [
+    {
+     "id": 111,
+     "name": "Extra Sambar",
+     "extra_price": 15
+    }
+   ]
+  },
+  {
+   "id": 164,
+   "restaurant_id": 21,
+   "restaurant_name": "Madras Cafe",
+   "name": "Medu Vada",
+   "description": "Freshly made medu vada, just the way you like it.",
+   "price": 85,
+   "is_veg": true,
+   "image_url": null,
+   "emoji": "🍩",
+   "category": "Breakfast",
+   "is_popular": false,
+   "variants": [],
+   "add_ons": [
+    {
+     "id": 111,
+     "name": "Extra Sambar",
+     "extra_price": 15
+    }
+   ]
+  },
+  {
+   "id": 165,
+   "restaurant_id": 21,
+   "restaurant_name": "Madras Cafe",
+   "name": "Onion Uttapam",
+   "description": "Freshly made onion uttapam, just the way you like it.",
+   "price": 104,
+   "is_veg": true,
+   "image_url": null,
+   "emoji": "🥞",
+   "category": "Dosa",
+   "is_popular": false,
+   "variants": [],
+   "add_ons": [
+    {
+     "id": 109,
+     "name": "Extra Chutney",
+     "extra_price": 10
+    },
+    {
+     "id": 110,
+     "name": "Butter",
+     "extra_price": 20
+    }
+   ]
+  },
+  {
+   "id": 166,
+   "restaurant_id": 21,
+   "restaurant_name": "Madras Cafe",
+   "name": "Rava Upma",
+   "description": "Freshly made rava upma, just the way you like it.",
+   "price": 75,
+   "is_veg": true,
+   "image_url": null,
+   "emoji": "🍲",
+   "category": "Breakfast",
+   "is_popular": false,
+   "variants": [],
+   "add_ons": [
+    {
+     "id": 111,
+     "name": "Extra Sambar",
+     "extra_price": 15
+    }
+   ]
+  },
+  {
+   "id": 167,
+   "restaurant_id": 21,
+   "restaurant_name": "Madras Cafe",
+   "name": "Filter Coffee",
+   "description": "Freshly made filter coffee, just the way you like it.",
+   "price": 47,
+   "is_veg": true,
+   "image_url": null,
+   "emoji": "☕",
+   "category": "Beverages",
+   "is_popular": false,
+   "variants": [],
+   "add_ons": []
+  },
+  {
+   "id": 168,
+   "restaurant_id": 21,
+   "restaurant_name": "Madras Cafe",
+   "name": "Ven Pongal",
+   "description": "Freshly made ven pongal, just the way you like it.",
+   "price": 94,
+   "is_veg": true,
+   "image_url": null,
+   "emoji": "🍲",
+   "category": "Breakfast",
+   "is_popular": false,
+   "variants": [],
+   "add_ons": [
+    {
+     "id": 111,
+     "name": "Extra Sambar",
+     "extra_price": 15
+    }
+   ]
+  },
+  {
+   "id": 169,
+   "restaurant_id": 22,
+   "restaurant_name": "Frosty Delights",
+   "name": "Chocolate Brownie",
+   "description": "Freshly made chocolate brownie, just the way you like it.",
+   "price": 123,
+   "is_veg": true,
+   "image_url": null,
+   "emoji": "🍫",
+   "category": "Cakes",
+   "is_popular": true,
+   "variants": [],
+   "add_ons": [
+    {
+     "id": 112,
+     "name": "Choco Sauce",
+     "extra_price": 20
+    }
+   ]
+  },
+  {
+   "id": 170,
+   "restaurant_id": 22,
+   "restaurant_name": "Frosty Delights",
+   "name": "Red Velvet Pastry",
+   "description": "Freshly made red velvet pastry, just the way you like it.",
+   "price": 113,
+   "is_veg": true,
+   "image_url": null,
+   "emoji": "🍰",
+   "category": "Cakes",
+   "is_popular": false,
+   "variants": [],
+   "add_ons": [
+    {
+     "id": 112,
+     "name": "Choco Sauce",
+     "extra_price": 20
+    }
+   ]
+  },
+  {
+   "id": 171,
+   "restaurant_id": 22,
+   "restaurant_name": "Frosty Delights",
+   "name": "Belgian Waffle",
+   "description": "Freshly made belgian waffle, just the way you like it.",
+   "price": 161,
+   "is_veg": true,
+   "image_url": null,
+   "emoji": "🧇",
+   "category": "Waffles",
+   "is_popular": false,
+   "variants": [],
+   "add_ons": [
+    {
+     "id": 112,
+     "name": "Choco Sauce",
+     "extra_price": 20
+    },
+    {
+     "id": 113,
+     "name": "Extra Scoop",
+     "extra_price": 40
+    }
+   ]
+  },
+  {
+   "id": 172,
+   "restaurant_id": 22,
+   "restaurant_name": "Frosty Delights",
+   "name": "Choco Sundae",
+   "description": "Freshly made choco sundae, just the way you like it.",
+   "price": 142,
+   "is_veg": true,
+   "image_url": null,
+   "emoji": "🍨",
+   "category": "Ice Cream",
+   "is_popular": false,
+   "variants": [],
+   "add_ons": [
+    {
+     "id": 113,
+     "name": "Extra Scoop",
+     "extra_price": 40
+    },
+    {
+     "id": 112,
+     "name": "Choco Sauce",
+     "extra_price": 20
+    }
+   ]
+  },
+  {
+   "id": 173,
+   "restaurant_id": 22,
+   "restaurant_name": "Frosty Delights",
+   "name": "Vanilla Scoop",
+   "description": "Freshly made vanilla scoop, just the way you like it.",
+   "price": 66,
+   "is_veg": true,
+   "image_url": null,
+   "emoji": "🍦",
+   "category": "Ice Cream",
+   "is_popular": false,
+   "variants": [],
+   "add_ons": [
+    {
+     "id": 113,
+     "name": "Extra Scoop",
+     "extra_price": 40
+    },
+    {
+     "id": 112,
+     "name": "Choco Sauce",
+     "extra_price": 20
+    }
+   ]
+  },
+  {
+   "id": 174,
+   "restaurant_id": 22,
+   "restaurant_name": "Frosty Delights",
+   "name": "Oreo Shake",
+   "description": "Freshly made oreo shake, just the way you like it.",
+   "price": 151,
+   "is_veg": true,
+   "image_url": null,
+   "emoji": "🥛",
+   "category": "Shakes",
+   "is_popular": false,
+   "variants": [],
+   "add_ons": []
+  },
+  {
+   "id": 175,
+   "restaurant_id": 22,
+   "restaurant_name": "Frosty Delights",
+   "name": "Glazed Donut",
+   "description": "Freshly made glazed donut, just the way you like it.",
+   "price": 85,
+   "is_veg": true,
+   "image_url": null,
+   "emoji": "🍩",
+   "category": "Bakery",
+   "is_popular": false,
+   "variants": [],
+   "add_ons": []
+  },
+  {
+   "id": 176,
+   "restaurant_id": 22,
+   "restaurant_name": "Frosty Delights",
+   "name": "Rasmalai",
+   "description": "Freshly made rasmalai, just the way you like it.",
+   "price": 94,
+   "is_veg": true,
+   "image_url": null,
+   "emoji": "🍮",
+   "category": "Indian Sweets",
+   "is_popular": false,
+   "variants": [],
+   "add_ons": []
+  },
+  {
+   "id": 177,
+   "restaurant_id": 23,
+   "restaurant_name": "Salad Story",
+   "name": "Greek Salad",
+   "description": "Freshly made greek salad, just the way you like it.",
+   "price": 189,
+   "is_veg": true,
+   "image_url": null,
+   "emoji": "🥗",
+   "category": "Salads",
+   "is_popular": true,
+   "variants": [],
+   "add_ons": [
+    {
+     "id": 114,
+     "name": "Extra Dressing",
+     "extra_price": 15
+    },
+    {
+     "id": 115,
+     "name": "Add Egg",
+     "extra_price": 20
+    }
+   ]
+  },
+  {
+   "id": 178,
+   "restaurant_id": 23,
+   "restaurant_name": "Salad Story",
+   "name": "Chicken Caesar Salad",
+   "description": "Freshly made chicken caesar salad, just the way you like it.",
+   "price": 227,
+   "is_veg": false,
+   "image_url": null,
+   "emoji": "🥗",
+   "category": "Salads",
+   "is_popular": false,
+   "variants": [],
+   "add_ons": [
+    {
+     "id": 114,
+     "name": "Extra Dressing",
+     "extra_price": 15
+    },
+    {
+     "id": 115,
+     "name": "Add Egg",
+     "extra_price": 20
+    }
+   ]
+  },
+  {
+   "id": 179,
+   "restaurant_id": 23,
+   "restaurant_name": "Salad Story",
+   "name": "Quinoa Bowl",
+   "description": "Freshly made quinoa bowl, just the way you like it.",
+   "price": 246,
+   "is_veg": true,
+   "image_url": null,
+   "emoji": "🥣",
+   "category": "Bowls",
+   "is_popular": false,
+   "variants": [],
+   "add_ons": [
+    {
+     "id": 114,
+     "name": "Extra Dressing",
+     "extra_price": 15
+    },
+    {
+     "id": 115,
+     "name": "Add Egg",
+     "extra_price": 20
+    }
+   ]
+  },
+  {
+   "id": 180,
+   "restaurant_id": 23,
+   "restaurant_name": "Salad Story",
+   "name": "Grilled Chicken Bowl",
+   "description": "Freshly made grilled chicken bowl, just the way you like it.",
+   "price": 284,
+   "is_veg": false,
+   "image_url": null,
+   "emoji": "🍱",
+   "category": "Bowls",
+   "is_popular": false,
+   "variants": [],
+   "add_ons": [
+    {
+     "id": 114,
+     "name": "Extra Dressing",
+     "extra_price": 15
+    },
+    {
+     "id": 115,
+     "name": "Add Egg",
+     "extra_price": 20
+    }
+   ]
+  },
+  {
+   "id": 181,
+   "restaurant_id": 23,
+   "restaurant_name": "Salad Story",
+   "name": "Avocado Toast",
+   "description": "Freshly made avocado toast, just the way you like it.",
+   "price": 170,
+   "is_veg": true,
+   "image_url": null,
+   "emoji": "🥑",
+   "category": "Breakfast",
+   "is_popular": false,
+   "variants": [],
+   "add_ons": []
+  },
+  {
+   "id": 182,
+   "restaurant_id": 23,
+   "restaurant_name": "Salad Story",
+   "name": "Fruit Bowl",
+   "description": "Freshly made fruit bowl, just the way you like it.",
+   "price": 142,
+   "is_veg": true,
+   "image_url": null,
+   "emoji": "🍓",
+   "category": "Breakfast",
+   "is_popular": false,
+   "variants": [],
+   "add_ons": []
+  },
+  {
+   "id": 183,
+   "restaurant_id": 23,
+   "restaurant_name": "Salad Story",
+   "name": "Green Smoothie",
+   "description": "Freshly made green smoothie, just the way you like it.",
+   "price": 142,
+   "is_veg": true,
+   "image_url": null,
+   "emoji": "🥤",
+   "category": "Smoothies",
+   "is_popular": false,
+   "variants": [],
+   "add_ons": []
+  },
+  {
+   "id": 184,
+   "restaurant_id": 23,
+   "restaurant_name": "Salad Story",
+   "name": "Protein Shake",
+   "description": "Freshly made protein shake, just the way you like it.",
+   "price": 180,
+   "is_veg": true,
+   "image_url": null,
+   "emoji": "🥛",
+   "category": "Smoothies",
+   "is_popular": false,
+   "variants": [],
+   "add_ons": []
+  },
+  {
+   "id": 185,
+   "restaurant_id": 24,
+   "restaurant_name": "Wrap Station",
+   "name": "Paneer Tikka Roll",
+   "description": "Freshly made paneer tikka roll, just the way you like it.",
+   "price": 123,
+   "is_veg": true,
+   "image_url": null,
+   "emoji": "🌯",
+   "category": "Rolls",
+   "is_popular": true,
+   "variants": [],
+   "add_ons": [
+    {
+     "id": 100,
+     "name": "Extra Cheese",
+     "extra_price": 20
+    },
+    {
+     "id": 116,
+     "name": "Extra Egg",
+     "extra_price": 15
+    }
+   ]
+  },
+  {
+   "id": 186,
+   "restaurant_id": 24,
+   "restaurant_name": "Wrap Station",
+   "name": "Veg Kathi Roll",
+   "description": "Freshly made veg kathi roll, just the way you like it.",
+   "price": 94,
+   "is_veg": true,
+   "image_url": null,
+   "emoji": "🌯",
+   "category": "Rolls",
+   "is_popular": false,
+   "variants": [],
+   "add_ons": [
+    {
+     "id": 100,
+     "name": "Extra Cheese",
+     "extra_price": 20
+    },
+    {
+     "id": 116,
+     "name": "Extra Egg",
+     "extra_price": 15
+    }
+   ]
+  },
+  {
+   "id": 187,
+   "restaurant_id": 24,
+   "restaurant_name": "Wrap Station",
+   "name": "Egg Roll",
+   "description": "Freshly made egg roll, just the way you like it.",
+   "price": 104,
+   "is_veg": false,
+   "image_url": null,
+   "emoji": "🥚",
+   "category": "Rolls",
+   "is_popular": false,
+   "variants": [],
+   "add_ons": [
+    {
+     "id": 100,
+     "name": "Extra Cheese",
+     "extra_price": 20
+    },
+    {
+     "id": 116,
+     "name": "Extra Egg",
+     "extra_price": 15
+    }
+   ]
+  },
+  {
+   "id": 188,
+   "restaurant_id": 24,
+   "restaurant_name": "Wrap Station",
+   "name": "Chicken Tikka Roll",
+   "description": "Freshly made chicken tikka roll, just the way you like it.",
+   "price": 151,
+   "is_veg": false,
+   "image_url": null,
+   "emoji": "🌯",
+   "category": "Rolls",
+   "is_popular": false,
+   "variants": [],
+   "add_ons": [
+    {
+     "id": 100,
+     "name": "Extra Cheese",
+     "extra_price": 20
+    },
+    {
+     "id": 116,
+     "name": "Extra Egg",
+     "extra_price": 15
+    }
+   ]
+  },
+  {
+   "id": 189,
+   "restaurant_id": 24,
+   "restaurant_name": "Wrap Station",
+   "name": "Mutton Seekh Roll",
+   "description": "Freshly made mutton seekh roll, just the way you like it.",
+   "price": 180,
+   "is_veg": false,
+   "image_url": null,
+   "emoji": "🌯",
+   "category": "Rolls",
+   "is_popular": false,
+   "variants": [],
+   "add_ons": [
+    {
+     "id": 100,
+     "name": "Extra Cheese",
+     "extra_price": 20
+    },
+    {
+     "id": 116,
+     "name": "Extra Egg",
+     "extra_price": 15
+    }
+   ]
+  },
+  {
+   "id": 190,
+   "restaurant_id": 24,
+   "restaurant_name": "Wrap Station",
+   "name": "Chicken Momos",
+   "description": "Freshly made chicken momos, just the way you like it.",
+   "price": 123,
+   "is_veg": false,
+   "image_url": null,
+   "emoji": "🥟",
+   "category": "Momos",
+   "is_popular": false,
+   "variants": [],
+   "add_ons": []
+  },
+  {
+   "id": 191,
+   "restaurant_id": 24,
+   "restaurant_name": "Wrap Station",
+   "name": "Veg Momos",
+   "description": "Freshly made veg momos, just the way you like it.",
+   "price": 94,
+   "is_veg": true,
+   "image_url": null,
+   "emoji": "🥟",
+   "category": "Momos",
+   "is_popular": false,
+   "variants": [],
+   "add_ons": []
+  },
+  {
+   "id": 192,
+   "restaurant_id": 24,
+   "restaurant_name": "Wrap Station",
+   "name": "Lime Soda",
+   "description": "Freshly made lime soda, just the way you like it.",
+   "price": 56,
+   "is_veg": true,
+   "image_url": null,
+   "emoji": "🍋",
+   "category": "Beverages",
+   "is_popular": false,
+   "variants": [],
+   "add_ons": []
+  }
+ ],
+ "orders": []
 }
