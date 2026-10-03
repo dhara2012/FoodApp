@@ -21,6 +21,51 @@
 		AF2740CA3070D33D0017C30C /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2740B43070D33D0017C30C /* Models.swift */; };
 		AF2740D33070DF780017C30C /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2740D23070DF710017C30C /* SessionManager.swift */; };
 		AF2740D53070DF960017C30C /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2740D43070DF940017C30C /* RootView.swift */; };
+		AF2740F43070FF450017C30C /* Formatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2740F33070FF430017C30C /* Formatters.swift */; };
+		AF27410A307100390017C30C /* CartButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF274109307100360017C30C /* CartButton.swift */; };
+		AF27410C3071004E0017C30C /* CartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF27410B3071004D0017C30C /* CartView.swift */; };
+		AF274112307115FA0017C30C /* EmojiTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF274110307115FA0017C30C /* EmojiTile.swift */; };
+		AF2741143071162E0017C30C /* FloatingCartBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2741133071162E0017C30C /* FloatingCartBar.swift */; };
+		AF274116307124D70017C30C /* FormField.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF274115307124D70017C30C /* FormField.swift */; };
+		AF274118307124F30017C30C /* ValidatorExtras.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF274117307124F30017C30C /* ValidatorExtras.swift */; };
+		AF274120307125280017C30C /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF27411E307125280017C30C /* SignupView.swift */; };
+		AF274121307125280017C30C /* ForgotPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF27411A307125280017C30C /* ForgotPasswordView.swift */; };
+		AF274122307125280017C30C /* SignupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF27411F307125280017C30C /* SignupViewModel.swift */; };
+		AF274123307125280017C30C /* OTPViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF27411D307125280017C30C /* OTPViewModel.swift */; };
+		AF274124307125280017C30C /* AuthModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF274119307125280017C30C /* AuthModels.swift */; };
+		AF274125307125280017C30C /* ForgotPasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF27411B307125280017C30C /* ForgotPasswordViewModel.swift */; };
+		AF274126307125280017C30C /* OTPView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF27411C307125280017C30C /* OTPView.swift */; };
+		AF27412A3071342B0017C30C /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2741293071342B0017C30C /* SearchBar.swift */; };
+		AF27412E307163FB0017C30C /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF27412D307163FB0017C30C /* Address.swift */; };
+		AF2741303071644E0017C30C /* AddressStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF27412F3071644E0017C30C /* AddressStore.swift */; };
+		AF274132307164750017C30C /* ValidatorAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF274131307164750017C30C /* ValidatorAddress.swift */; };
+		AF2741393071649B0017C30C /* AddressFormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2741353071649B0017C30C /* AddressFormViewModel.swift */; };
+		AF27413A3071649B0017C30C /* LocationFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2741373071649B0017C30C /* LocationFetcher.swift */; };
+		AF27413B3071649B0017C30C /* AddressBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2741333071649B0017C30C /* AddressBook.swift */; };
+		AF27413C3071649B0017C30C /* AddressFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2741343071649B0017C30C /* AddressFormView.swift */; };
+		AF27413D3071649B0017C30C /* AddressListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2741363071649B0017C30C /* AddressListView.swift */; };
+		AF274147307164CD0017C30C /* MenuRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF274141307164CD0017C30C /* MenuRepository.swift */; };
+		AF274148307164CD0017C30C /* ProductDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF274142307164CD0017C30C /* ProductDetailView.swift */; };
+		AF274149307164CD0017C30C /* ProductDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF274143307164CD0017C30C /* ProductDetailViewModel.swift */; };
+		AF27414A307164CD0017C30C /* RestaurantDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF274144307164CD0017C30C /* RestaurantDetailView.swift */; };
+		AF27414B307164CD0017C30C /* RestaurantDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF274145307164CD0017C30C /* RestaurantDetailViewModel.swift */; };
+		AF274151307164D10017C30C /* BannerCarousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF27414C307164D10017C30C /* BannerCarousel.swift */; };
+		AF274152307164D10017C30C /* HomeRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF27414D307164D10017C30C /* HomeRepository.swift */; };
+		AF274153307164D10017C30C /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF27414E307164D10017C30C /* HomeView.swift */; };
+		AF274154307164D10017C30C /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF27414F307164D10017C30C /* HomeViewModel.swift */; };
+		AF274158307166170017C30C /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF274157307166170017C30C /* Order.swift */; };
+		AF27415A307166320017C30C /* ValidatorPayment.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF274159307166320017C30C /* ValidatorPayment.swift */; };
+		AF27415C307166540017C30C /* ServiceContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF27415B307166540017C30C /* ServiceContainer.swift */; };
+		AF27415F307166820017C30C /* OrderRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF27415D307166820017C30C /* OrderRepository.swift */; };
+		AF274164307166970017C30C /* PaymentService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF274162307166970017C30C /* PaymentService.swift */; };
+		AF274165307166970017C30C /* CheckoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF274160307166970017C30C /* CheckoutView.swift */; };
+		AF274166307166970017C30C /* CheckoutViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF274161307166970017C30C /* CheckoutViewModel.swift */; };
+		AF3458083071742F0041AF66 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3458073071742F0041AF66 /* AppRouter.swift */; };
+		AF34580E3071746A0041AF66 /* OrderHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF34580B3071746A0041AF66 /* OrderHistoryView.swift */; };
+		AF34580F3071746A0041AF66 /* OrderDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3458093071746A0041AF66 /* OrderDetailView.swift */; };
+		AF3458103071746A0041AF66 /* OrdersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF34580D3071746A0041AF66 /* OrdersViewModel.swift */; };
+		AF3458113071746A0041AF66 /* OrderDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF34580A3071746A0041AF66 /* OrderDetailViewModel.swift */; };
+		AF3458123071746A0041AF66 /* OrderStatus+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF34580C3071746A0041AF66 /* OrderStatus+UI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +103,51 @@
 		AF2740BC3070D33D0017C30C /* CartStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartStore.swift; sourceTree = "<group>"; };
 		AF2740D23070DF710017C30C /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
 		AF2740D43070DF940017C30C /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		AF2740F33070FF430017C30C /* Formatters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Formatters.swift; sourceTree = "<group>"; };
+		AF274109307100360017C30C /* CartButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartButton.swift; sourceTree = "<group>"; };
+		AF27410B3071004D0017C30C /* CartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartView.swift; sourceTree = "<group>"; };
+		AF274110307115FA0017C30C /* EmojiTile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiTile.swift; sourceTree = "<group>"; };
+		AF2741133071162E0017C30C /* FloatingCartBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingCartBar.swift; sourceTree = "<group>"; };
+		AF274115307124D70017C30C /* FormField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormField.swift; sourceTree = "<group>"; };
+		AF274117307124F30017C30C /* ValidatorExtras.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidatorExtras.swift; sourceTree = "<group>"; };
+		AF274119307125280017C30C /* AuthModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthModels.swift; sourceTree = "<group>"; };
+		AF27411A307125280017C30C /* ForgotPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordView.swift; sourceTree = "<group>"; };
+		AF27411B307125280017C30C /* ForgotPasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewModel.swift; sourceTree = "<group>"; };
+		AF27411C307125280017C30C /* OTPView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPView.swift; sourceTree = "<group>"; };
+		AF27411D307125280017C30C /* OTPViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPViewModel.swift; sourceTree = "<group>"; };
+		AF27411E307125280017C30C /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
+		AF27411F307125280017C30C /* SignupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewModel.swift; sourceTree = "<group>"; };
+		AF2741293071342B0017C30C /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		AF27412D307163FB0017C30C /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
+		AF27412F3071644E0017C30C /* AddressStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressStore.swift; sourceTree = "<group>"; };
+		AF274131307164750017C30C /* ValidatorAddress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidatorAddress.swift; sourceTree = "<group>"; };
+		AF2741333071649B0017C30C /* AddressBook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressBook.swift; sourceTree = "<group>"; };
+		AF2741343071649B0017C30C /* AddressFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressFormView.swift; sourceTree = "<group>"; };
+		AF2741353071649B0017C30C /* AddressFormViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressFormViewModel.swift; sourceTree = "<group>"; };
+		AF2741363071649B0017C30C /* AddressListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressListView.swift; sourceTree = "<group>"; };
+		AF2741373071649B0017C30C /* LocationFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationFetcher.swift; sourceTree = "<group>"; };
+		AF274141307164CD0017C30C /* MenuRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuRepository.swift; sourceTree = "<group>"; };
+		AF274142307164CD0017C30C /* ProductDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailView.swift; sourceTree = "<group>"; };
+		AF274143307164CD0017C30C /* ProductDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailViewModel.swift; sourceTree = "<group>"; };
+		AF274144307164CD0017C30C /* RestaurantDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailView.swift; sourceTree = "<group>"; };
+		AF274145307164CD0017C30C /* RestaurantDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailViewModel.swift; sourceTree = "<group>"; };
+		AF27414C307164D10017C30C /* BannerCarousel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerCarousel.swift; sourceTree = "<group>"; };
+		AF27414D307164D10017C30C /* HomeRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRepository.swift; sourceTree = "<group>"; };
+		AF27414E307164D10017C30C /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		AF27414F307164D10017C30C /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		AF274157307166170017C30C /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		AF274159307166320017C30C /* ValidatorPayment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidatorPayment.swift; sourceTree = "<group>"; };
+		AF27415B307166540017C30C /* ServiceContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceContainer.swift; sourceTree = "<group>"; };
+		AF27415D307166820017C30C /* OrderRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderRepository.swift; sourceTree = "<group>"; };
+		AF274160307166970017C30C /* CheckoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutView.swift; sourceTree = "<group>"; };
+		AF274161307166970017C30C /* CheckoutViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutViewModel.swift; sourceTree = "<group>"; };
+		AF274162307166970017C30C /* PaymentService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentService.swift; sourceTree = "<group>"; };
+		AF3458073071742F0041AF66 /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
+		AF3458093071746A0041AF66 /* OrderDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDetailView.swift; sourceTree = "<group>"; };
+		AF34580A3071746A0041AF66 /* OrderDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDetailViewModel.swift; sourceTree = "<group>"; };
+		AF34580B3071746A0041AF66 /* OrderHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderHistoryView.swift; sourceTree = "<group>"; };
+		AF34580C3071746A0041AF66 /* OrderStatus+UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OrderStatus+UI.swift"; sourceTree = "<group>"; };
+		AF34580D3071746A0041AF66 /* OrdersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -74,11 +164,6 @@
 		AF2740993070D23F0017C30C /* FoodAppUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = FoodAppUITests;
-			sourceTree = "<group>";
-		};
-		AF2740D63070DFF20017C30C /* Home */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -135,8 +220,10 @@
 		AF2740AA3070D33D0017C30C /* App */ = {
 			isa = PBXGroup;
 			children = (
+				AF27415B307166540017C30C /* ServiceContainer.swift */,
 				AF2740D43070DF940017C30C /* RootView.swift */,
 				AF2740A93070D33D0017C30C /* FoodAppApp.swift */,
+				AF3458073071742F0041AF66 /* AppRouter.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -154,6 +241,7 @@
 		AF2740B03070D33D0017C30C /* Storage */ = {
 			isa = PBXGroup;
 			children = (
+				AF27412F3071644E0017C30C /* AddressStore.swift */,
 				AF2740AF3070D33D0017C30C /* KeychainService.swift */,
 			);
 			path = Storage;
@@ -162,7 +250,11 @@
 		AF2740B23070D33D0017C30C /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				AF2740F33070FF430017C30C /* Formatters.swift */,
+				AF274159307166320017C30C /* ValidatorPayment.swift */,
 				AF2740B13070D33D0017C30C /* Validator.swift */,
+				AF274117307124F30017C30C /* ValidatorExtras.swift */,
+				AF274131307164750017C30C /* ValidatorAddress.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -170,6 +262,7 @@
 		AF2740B33070D33D0017C30C /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				AF274111307115FA0017C30C /* UI */,
 				AF2740AE3070D33D0017C30C /* Networking */,
 				AF2740B03070D33D0017C30C /* Storage */,
 				AF2740B23070D33D0017C30C /* Utils */,
@@ -180,7 +273,9 @@
 		AF2740B53070D33D0017C30C /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				AF274157307166170017C30C /* Order.swift */,
 				AF2740B43070D33D0017C30C /* Models.swift */,
+				AF27412D307163FB0017C30C /* Address.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -201,6 +296,13 @@
 				AF2740B83070D33D0017C30C /* AuthRepository.swift */,
 				AF2740B93070D33D0017C30C /* LoginView.swift */,
 				AF2740BA3070D33D0017C30C /* LoginViewModel.swift */,
+				AF274119307125280017C30C /* AuthModels.swift */,
+				AF27411A307125280017C30C /* ForgotPasswordView.swift */,
+				AF27411B307125280017C30C /* ForgotPasswordViewModel.swift */,
+				AF27411C307125280017C30C /* OTPView.swift */,
+				AF27411D307125280017C30C /* OTPViewModel.swift */,
+				AF27411E307125280017C30C /* SignupView.swift */,
+				AF27411F307125280017C30C /* SignupViewModel.swift */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -208,6 +310,9 @@
 		AF2740BD3070D33D0017C30C /* Cart */ = {
 			isa = PBXGroup;
 			children = (
+				AF2741133071162E0017C30C /* FloatingCartBar.swift */,
+				AF27410B3071004D0017C30C /* CartView.swift */,
+				AF274109307100360017C30C /* CartButton.swift */,
 				AF2740BC3070D33D0017C30C /* CartStore.swift */,
 			);
 			path = Cart;
@@ -216,11 +321,83 @@
 		AF2740BE3070D33D0017C30C /* Features */ = {
 			isa = PBXGroup;
 			children = (
-				AF2740D63070DFF20017C30C /* Home */,
+				AF274163307166970017C30C /* Checkout */,
+				AF27415E307166820017C30C /* Orders */,
+				AF2741383071649B0017C30C /* Address */,
+				AF274146307164CD0017C30C /* Restaurant */,
+				AF274150307164D10017C30C /* Home */,
 				AF2740BB3070D33D0017C30C /* Auth */,
 				AF2740BD3070D33D0017C30C /* Cart */,
 			);
 			path = Features;
+			sourceTree = "<group>";
+		};
+		AF274111307115FA0017C30C /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				AF2741293071342B0017C30C /* SearchBar.swift */,
+				AF274110307115FA0017C30C /* EmojiTile.swift */,
+				AF274115307124D70017C30C /* FormField.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		AF2741383071649B0017C30C /* Address */ = {
+			isa = PBXGroup;
+			children = (
+				AF2741333071649B0017C30C /* AddressBook.swift */,
+				AF2741343071649B0017C30C /* AddressFormView.swift */,
+				AF2741353071649B0017C30C /* AddressFormViewModel.swift */,
+				AF2741363071649B0017C30C /* AddressListView.swift */,
+				AF2741373071649B0017C30C /* LocationFetcher.swift */,
+			);
+			path = Address;
+			sourceTree = "<group>";
+		};
+		AF274146307164CD0017C30C /* Restaurant */ = {
+			isa = PBXGroup;
+			children = (
+				AF274141307164CD0017C30C /* MenuRepository.swift */,
+				AF274142307164CD0017C30C /* ProductDetailView.swift */,
+				AF274143307164CD0017C30C /* ProductDetailViewModel.swift */,
+				AF274144307164CD0017C30C /* RestaurantDetailView.swift */,
+				AF274145307164CD0017C30C /* RestaurantDetailViewModel.swift */,
+			);
+			path = Restaurant;
+			sourceTree = "<group>";
+		};
+		AF274150307164D10017C30C /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				AF27414C307164D10017C30C /* BannerCarousel.swift */,
+				AF27414D307164D10017C30C /* HomeRepository.swift */,
+				AF27414E307164D10017C30C /* HomeView.swift */,
+				AF27414F307164D10017C30C /* HomeViewModel.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		AF27415E307166820017C30C /* Orders */ = {
+			isa = PBXGroup;
+			children = (
+				AF27415D307166820017C30C /* OrderRepository.swift */,
+				AF3458093071746A0041AF66 /* OrderDetailView.swift */,
+				AF34580A3071746A0041AF66 /* OrderDetailViewModel.swift */,
+				AF34580B3071746A0041AF66 /* OrderHistoryView.swift */,
+				AF34580C3071746A0041AF66 /* OrderStatus+UI.swift */,
+				AF34580D3071746A0041AF66 /* OrdersViewModel.swift */,
+			);
+			path = Orders;
+			sourceTree = "<group>";
+		};
+		AF274163307166970017C30C /* Checkout */ = {
+			isa = PBXGroup;
+			children = (
+				AF274160307166970017C30C /* CheckoutView.swift */,
+				AF274161307166970017C30C /* CheckoutViewModel.swift */,
+				AF274162307166970017C30C /* PaymentService.swift */,
+			);
+			path = Checkout;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,7 +417,6 @@
 			);
 			fileSystemSynchronizedGroups = (
 				AF2740813070D23D0017C30C /* FoodApp */,
-				AF2740D63070DFF20017C30C /* Home */,
 			);
 			name = FoodApp;
 			packageProductDependencies = (
@@ -369,16 +545,61 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF2741393071649B0017C30C /* AddressFormViewModel.swift in Sources */,
+				AF27413A3071649B0017C30C /* LocationFetcher.swift in Sources */,
+				AF27413B3071649B0017C30C /* AddressBook.swift in Sources */,
+				AF27413C3071649B0017C30C /* AddressFormView.swift in Sources */,
+				AF34580E3071746A0041AF66 /* OrderHistoryView.swift in Sources */,
+				AF34580F3071746A0041AF66 /* OrderDetailView.swift in Sources */,
+				AF3458103071746A0041AF66 /* OrdersViewModel.swift in Sources */,
+				AF3458113071746A0041AF66 /* OrderDetailViewModel.swift in Sources */,
+				AF3458123071746A0041AF66 /* OrderStatus+UI.swift in Sources */,
+				AF27413D3071649B0017C30C /* AddressListView.swift in Sources */,
+				AF27415A307166320017C30C /* ValidatorPayment.swift in Sources */,
+				AF2741303071644E0017C30C /* AddressStore.swift in Sources */,
+				AF27412A3071342B0017C30C /* SearchBar.swift in Sources */,
+				AF274118307124F30017C30C /* ValidatorExtras.swift in Sources */,
 				AF2740BF3070D33D0017C30C /* AuthRepository.swift in Sources */,
 				AF2740C03070D33D0017C30C /* NetworkError.swift in Sources */,
 				AF2740C13070D33D0017C30C /* KeychainService.swift in Sources */,
 				AF2740C23070D33D0017C30C /* Endpoint.swift in Sources */,
 				AF2740D53070DF960017C30C /* RootView.swift in Sources */,
+				AF274151307164D10017C30C /* BannerCarousel.swift in Sources */,
+				AF274152307164D10017C30C /* HomeRepository.swift in Sources */,
+				AF274158307166170017C30C /* Order.swift in Sources */,
+				AF274153307164D10017C30C /* HomeView.swift in Sources */,
+				AF274154307164D10017C30C /* HomeViewModel.swift in Sources */,
 				AF2740C33070D33D0017C30C /* LoginView.swift in Sources */,
+				AF27412E307163FB0017C30C /* Address.swift in Sources */,
 				AF2740C43070D33D0017C30C /* Validator.swift in Sources */,
+				AF274116307124D70017C30C /* FormField.swift in Sources */,
+				AF274112307115FA0017C30C /* EmojiTile.swift in Sources */,
+				AF274147307164CD0017C30C /* MenuRepository.swift in Sources */,
+				AF274148307164CD0017C30C /* ProductDetailView.swift in Sources */,
+				AF274149307164CD0017C30C /* ProductDetailViewModel.swift in Sources */,
+				AF27414A307164CD0017C30C /* RestaurantDetailView.swift in Sources */,
+				AF27414B307164CD0017C30C /* RestaurantDetailViewModel.swift in Sources */,
+				AF274120307125280017C30C /* SignupView.swift in Sources */,
+				AF274132307164750017C30C /* ValidatorAddress.swift in Sources */,
+				AF274121307125280017C30C /* ForgotPasswordView.swift in Sources */,
+				AF3458083071742F0041AF66 /* AppRouter.swift in Sources */,
+				AF27415F307166820017C30C /* OrderRepository.swift in Sources */,
+				AF274122307125280017C30C /* SignupViewModel.swift in Sources */,
+				AF274123307125280017C30C /* OTPViewModel.swift in Sources */,
+				AF274124307125280017C30C /* AuthModels.swift in Sources */,
+				AF274125307125280017C30C /* ForgotPasswordViewModel.swift in Sources */,
+				AF274126307125280017C30C /* OTPView.swift in Sources */,
+				AF27415C307166540017C30C /* ServiceContainer.swift in Sources */,
 				AF2740C53070D33D0017C30C /* PriceCalculator.swift in Sources */,
+				AF274164307166970017C30C /* PaymentService.swift in Sources */,
+				AF274165307166970017C30C /* CheckoutView.swift in Sources */,
+				AF274166307166970017C30C /* CheckoutViewModel.swift in Sources */,
 				AF2740C63070D33D0017C30C /* FoodAppApp.swift in Sources */,
+				AF27410A307100390017C30C /* CartButton.swift in Sources */,
+				AF2740F43070FF450017C30C /* Formatters.swift in Sources */,
 				AF2740C73070D33D0017C30C /* APIClient.swift in Sources */,
+				AF27410C3071004E0017C30C /* CartView.swift in Sources */,
+				AF2741143071162E0017C30C /* FloatingCartBar.swift in Sources */,
 				AF2740C83070D33D0017C30C /* LoginViewModel.swift in Sources */,
 				AF2740D33070DF780017C30C /* SessionManager.swift in Sources */,
 				AF2740C93070D33D0017C30C /* CartStore.swift in Sources */,
@@ -544,6 +765,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We use your location to fill your delivery address.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -575,6 +797,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We use your location to fill your delivery address.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
