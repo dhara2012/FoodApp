@@ -22,6 +22,8 @@ struct Restaurant: Decodable, Identifiable, Equatable {
     let deliveryFee: Decimal
     let distanceKm: Double
     let cuisine: String
+    var emoji: String? = nil
+    var offer: String? = nil
 }
 
 struct OptionChoice: Codable, Hashable, Identifiable {
@@ -38,6 +40,12 @@ struct MenuItem: Decodable, Identifiable {
     let price: Decimal
     let isVeg: Bool
     let imageUrl: String?
+    let variants: [OptionChoice]   // એક જ પસંદ થાય (Size)
+    let addOns: [OptionChoice]     // ઘણા પસંદ થાય
+    var category: String? = nil
+    var emoji: String? = nil
+    var restaurantName: String? = nil
+    var isPopular: Bool? = nil
 }
 
 struct CartItem: Identifiable, Equatable {
@@ -59,6 +67,14 @@ struct Coupon: Equatable {
     let kind: Kind
     let minOrder: Decimal
     let maxDiscount: Decimal?
+
+    static let available: [Coupon] = [
+        Coupon(code: "SAVE20", kind: .percent(20), minOrder: 200, maxDiscount: 100),
+        Coupon(code: "FLAT50", kind: .flat(50), minOrder: 300, maxDiscount: nil)
+    ]
+    static func find(_ code: String) -> Coupon? {
+        available.first { $0.code == code.uppercased() }
+    }
 }
 
 enum RestaurantSort: String, CaseIterable, Identifiable {
