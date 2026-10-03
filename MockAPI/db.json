@@ -1,0 +1,12 @@
+{
+  "restaurants": [
+    {"id":1,"name":"Pizza Palace","image_url":null,"rating":4.4,"delivery_time_min":30,"delivery_fee":40,"distance_km":2.1,"cuisine":"Pizza"},
+    {"id":2,"name":"Biryani House","image_url":null,"rating":4.2,"delivery_time_min":40,"delivery_fee":30,"distance_km":3.5,"cuisine":"Biryani"},
+    {"id":3,"name":"Burger Barn","image_url":null,"rating":4.0,"delivery_time_min":25,"delivery_fee":25,"distance_km":1.4,"cuisine":"Burger"}
+  ],
+  "menu": [
+    {"id":1,"restaurant_id":1,"name":"Margherita","description":"Classic cheese pizza","price":200,"is_veg":true,"image_url":null},
+    {"id":2,"restaurant_id":1,"name":"Chicken Pizza","description":"Spicy chicken","price":280,"is_veg":false,"image_url":null}
+  ],
+  "orders": []
+}
