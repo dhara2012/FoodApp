@@ -14,10 +14,12 @@ struct RootView: View {
 
     var body: some View {
         if session.isLoggedIn {
-            HomeView(viewModel: HomeViewModel(repository: HomeRepository(api: api)))
+            HomeView(viewModel: HomeViewModel(repository: HomeRepository(api: api)), api: api)
         } else {
-            LoginView(viewModel: LoginViewModel(
-                repository: AuthRepository(api: api, tokenStore: tokenStore)))
+            let repository = AuthRepository(api: api, tokenStore: tokenStore)
+            NavigationStack {
+                LoginView(viewModel: LoginViewModel(repository: repository), repository: repository)
+            }
         }
     }
 }

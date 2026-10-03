@@ -1,9 +1,19 @@
 import XCTest
 @testable import FoodApp
 
-private final class MockAuthRepo: AuthRepositoryProtocol {
-    var result: Result<User, Error> = .success(User(id: 1, name: "T", email: "t@t.com", mobile: nil))
-    func login(email: String, password: String) async throws -> User { try result.get() }
+/// બધા auth tests માટે shared mock
+final class MockAuthRepo: AuthRepositoryProtocol {
+    var error: Error?
+    private(set) var signupCalls = 0
+    private(set) var verifyCalls = 0
+    private let user = User(id: 1, name: "T", email: "t@t.com", mobile: nil)
+
+    func login(email: String, password: String) async throws -> User { if let error { throw error }; return user }
+    func signup(_ request: SignupRequest) async throws { signupCalls += 1; if let error { throw error } }
+    func verifyOTP(email: String, otp: String) async throws -> User { verifyCalls += 1; if let error { throw error }; return user }
+    func resendOTP(email: String) async throws { if let error { throw error } }
+    func forgotPassword(email: String) async throws { if let error { throw error } }
+    func resetPassword(email: String, otp: String, newPassword: String) async throws { if let error { throw error } }
     func logout() {}
 }
 
@@ -25,7 +35,7 @@ final class LoginViewModelTests: XCTestCase {
     }
 
     func test_invalidCredentials() async {
-        let repo = MockAuthRepo(); repo.result = .failure(NetworkError.unauthorized)
+        let repo = MockAuthRepo(); repo.error = NetworkError.unauthorized
         let vm = LoginViewModel(repository: repo)
         vm.email = "t@t.com"; vm.password = "abcd1234"
         await vm.login()
@@ -33,7 +43,7 @@ final class LoginViewModelTests: XCTestCase {
     }
 
     func test_noInternet() async {
-        let repo = MockAuthRepo(); repo.result = .failure(NetworkError.noInternet)
+        let repo = MockAuthRepo(); repo.error = NetworkError.noInternet
         let vm = LoginViewModel(repository: repo)
         vm.email = "t@t.com"; vm.password = "abcd1234"
         await vm.login()

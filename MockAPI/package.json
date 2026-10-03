@@ -1,0 +1,9 @@
+{
+  "name": "foodapp-mock-api",
+  "private": true,
+  "description": "Mock backend for FoodApp (json-server + real email OTP)",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "nodemailer": "^6.9.14"
+  }
+}

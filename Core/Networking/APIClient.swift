@@ -1,5 +1,10 @@
 import Foundation
 
+extension Notification.Name {
+    /// Refresh token પણ expire થાય ત્યારે post થાય; SessionManager logout કરે
+    static let sessionExpired = Notification.Name("sessionExpired")
+}
+
 protocol APIClientProtocol {
     func send<T: Decodable>(_ endpoint: Endpoint) async throws -> T
 }
@@ -20,6 +25,16 @@ final class APIClient: APIClientProtocol {
     }
 
     func send<T: Decodable>(_ endpoint: Endpoint) async throws -> T {
+        do {
+            return try await perform(endpoint)
+        } catch NetworkError.unauthorized where endpoint.requiresAuth {
+            // Access token expire → refresh token થી નવો લઈ એક જ વાર retry
+            guard await refreshTokens() else { throw NetworkError.unauthorized }
+            return try await perform(endpoint)
+        }
+    }
+
+    private func perform<T: Decodable>(_ endpoint: Endpoint) async throws -> T {
         let request = try makeRequest(endpoint)
         do {
             let (data, response) = try await session.data(for: request)
@@ -28,19 +43,44 @@ final class APIClient: APIClientProtocol {
             case 200...299:
                 do { return try decoder.decode(T.self, from: data) }
                 catch { throw NetworkError.decoding }
-            case 401:
+            case 401 where endpoint.requiresAuth:
                 throw NetworkError.unauthorized
+            case 401 where endpoint.path == "/auth/login":
+                throw NetworkError.unauthorized          // ખોટા credentials
             default:
-                throw NetworkError.server(code: http.statusCode, message: nil)
+                throw NetworkError.server(code: http.statusCode, message: serverMessage(from: data))
             }
         } catch let error as NetworkError {
             throw error
         } catch let error as URLError where error.code == .notConnectedToInternet
-                                          || error.code == .networkConnectionLost {
+                                          || error.code == .networkConnectionLost
+                                          || error.code == .cannotConnectToHost {
             throw NetworkError.noInternet
         } catch {
             throw NetworkError.unknown
         }
+    }
+
+    private func refreshTokens() async -> Bool {
+        guard let refresh = tokenStore.refreshToken else { expireSession(); return false }
+        do {
+            let pair: TokenPair = try await perform(.refresh(refreshToken: refresh))
+            tokenStore.save(access: pair.accessToken, refresh: pair.refreshToken)
+            return true
+        } catch {
+            expireSession()
+            return false
+        }
+    }
+
+    private func expireSession() {
+        tokenStore.clear()
+        NotificationCenter.default.post(name: .sessionExpired, object: nil)
+    }
+
+    /// Server નો {"message": "..."} user ને બતાવવા
+    private func serverMessage(from data: Data) -> String? {
+        (try? JSONDecoder().decode(MessageResponse.self, from: data))?.message
     }
 
     private func makeRequest(_ endpoint: Endpoint) throws -> URLRequest {
