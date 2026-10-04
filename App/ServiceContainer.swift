@@ -5,9 +5,11 @@ import Combine
 final class ServiceContainer: ObservableObject {
     let orders: OrderRepositoryProtocol
     let payments: PaymentServicing
+    let profile: ProfileRepositoryProtocol
 
     init(api: APIClientProtocol, payments: PaymentServicing = MockPaymentService()) {
         self.orders = OrderRepository(api: api)
         self.payments = payments
+        self.profile = ProfileRepository(api: api)
     }
 }

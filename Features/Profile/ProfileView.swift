@@ -15,23 +15,23 @@ struct ProfileView: View {
                 Section { header }
 
                 Section("Account") {
-                    NavigationLink { EditProfileView() } label: { Label("Edit profile", systemImage: "person.text.rectangle") }
-                    NavigationLink { ChangePasswordView() } label: { Label("Change password", systemImage: "lock") }
-                    NavigationLink { AddressListView() } label: { Label("Saved addresses", systemImage: "mappin.and.ellipse") }
+                    NavigationLink { EditProfileView() } label: { RowLabel("Edit profile", "person.text.rectangle") }
+                    NavigationLink { ChangePasswordView() } label: { RowLabel("Change password", "lock.fill") }
+                    NavigationLink { AddressListView() } label: { RowLabel("Saved addresses", "mappin.and.ellipse") }
                 }
 
                 Section("Orders & preferences") {
                     Button { router.selectedTab = .orders } label: {
-                        HStack { Label("Order history", systemImage: "bag"); Spacer()
+                        HStack { RowLabel("Order history", "bag.fill"); Spacer()
                             Image(systemName: "chevron.right").font(.caption).foregroundColor(.secondary) }
                     }
                     .foregroundColor(.primary)
-                    NavigationLink { NotificationSettingsView() } label: { Label("Notification settings", systemImage: "bell") }
+                    NavigationLink { NotificationSettingsView() } label: { RowLabel("Notification settings", "bell.fill") }
                 }
 
                 Section {
                     Button(role: .destructive) { showLogout = true } label: {
-                        Label("Log out", systemImage: "rectangle.portrait.and.arrow.right")
+                        RowLabel("Log out", "rectangle.portrait.and.arrow.right", color: .red)
                     }
                 } footer: {
                     Text("FoodApp 1.0").frame(maxWidth: .infinity).padding(.top, 8)
@@ -76,5 +76,30 @@ struct ProfileView: View {
             }
         }
         .padding(.vertical, 6)
+    }
+}
+
+/// Profile ની દરેક row: રંગીન icon-બોક્સ + લખાણ (બધી rows માં સરખો દેખાવ)
+struct RowLabel: View {
+    let title: String
+    let icon: String
+    var color: Color = .orange
+
+    init(_ title: String, _ icon: String, color: Color = .orange) {
+        self.title = title
+        self.icon = icon
+        self.color = color
+    }
+
+    var body: some View {
+        HStack(spacing: 12) {
+            Image(systemName: icon)
+                .font(.system(size: 14, weight: .semibold))
+                .foregroundColor(.white)
+                .frame(width: 30, height: 30)
+                .background(color)
+                .clipShape(RoundedRectangle(cornerRadius: 8))
+            Text(title).foregroundColor(color == .red ? .red : .primary)
+        }
     }
 }

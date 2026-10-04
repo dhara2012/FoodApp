@@ -41,6 +41,16 @@ struct Endpoint {
                  body: json(["refresh_token": refreshToken]), requiresAuth: false)
     }
 
+    // MARK: Profile
+    static func profile() -> Endpoint { Endpoint(path: "/profile") }
+    static func updateProfile(name: String, mobile: String) -> Endpoint {
+        Endpoint(path: "/profile", method: .put, body: json(["name": name, "mobile": mobile]))
+    }
+    static func changePassword(current: String, new: String) -> Endpoint {
+        Endpoint(path: "/profile/change-password", method: .post,
+                 body: json(["current_password": current, "new_password": new]))
+    }
+
     // MARK: Orders
     static func createOrder(_ request: OrderRequest, idempotencyKey: String) -> Endpoint {
         let encoder = JSONEncoder()

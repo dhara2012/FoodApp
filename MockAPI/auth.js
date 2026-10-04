@@ -89,7 +89,42 @@ function checkOtp(entry, otp) {
   return null;
 }
 
+// ---------- Profile (Authorization: Bearer access-<userId>-...) ----------
+const userFromToken = (req) => {
+  const m = /^Bearer access-(\d+)-/.exec(req.get("Authorization") || "");
+  return m ? users.find((u) => u.id === Number(m[1])) : null;
+};
+
+function profileRoutes(req, res, next) {
+  const user = userFromToken(req);
+  if (!user) return fail(res, 401, "Session expired");
+  const b = req.body || {};
+
+  if (req.path === "/profile" && req.method === "GET") return res.json(strip(user));
+
+  if (req.path === "/profile" && req.method === "PUT") {
+    if (String(b.name || "").trim().length < 2) return fail(res, 400, "Enter your full name");
+    if (!/^[6-9][0-9]{9}$/.test(String(b.mobile || ""))) return fail(res, 400, "Enter a valid 10 digit mobile number");
+    user.name = String(b.name).trim();
+    user.mobile = b.mobile;
+    saveUsers();
+    return res.json(strip(user));
+  }
+
+  if (req.path === "/profile/change-password" && req.method === "POST") {
+    if (!verifyPassword(b.current_password, user.password)) return fail(res, 400, "Current password is incorrect");
+    const next_ = String(b.new_password || "");
+    if (next_.length < 8 || !/[A-Za-z]/.test(next_) || !/[0-9]/.test(next_)) return fail(res, 400, "Use at least 8 characters with letters and numbers");
+    if (next_ === b.current_password) return fail(res, 400, "New password must be different");
+    user.password = hashPassword(next_);
+    saveUsers();
+    return res.json({ message: "Password changed successfully" });
+  }
+  return next();
+}
+
 module.exports = async (req, res, next) => {
+  if (req.path === "/profile" || req.path === "/profile/change-password") return profileRoutes(req, res, next);
   if (req.method !== "POST") return next();
   const b = req.body || {};
   const email = lower(b.email);
@@ -148,8 +183,9 @@ module.exports = async (req, res, next) => {
       }
 
       case "/auth/refresh": {
-        if (!String(b.refresh_token || "").startsWith("refresh-")) return fail(res, 401, "Session expired");
-        return res.json({ access_token: `access-r-${Date.now()}`, refresh_token: `refresh-r-${Date.now()}` });
+        const m = /^refresh-(\d+)-/.exec(String(b.refresh_token || ""));
+        if (!m || !users.some((u) => u.id === Number(m[1]))) return fail(res, 401, "Session expired");
+        return res.json({ access_token: `access-${m[1]}-${Date.now()}`, refresh_token: `refresh-${m[1]}-${Date.now()}` });
       }
 
       default:
