@@ -21,6 +21,7 @@ private struct CheckoutContent: View {
     @EnvironmentObject var cart: CartStore
     @EnvironmentObject var book: AddressBook
     @EnvironmentObject var router: AppRouter
+    @EnvironmentObject var notifications: NotificationService
     @State private var showAddresses = false
     @State private var showConfirmation = false
 
@@ -83,7 +84,12 @@ private struct CheckoutContent: View {
                 AddressListView { address in book.select(address.id); showAddresses = false }
             }
         }
-        .onReceive(viewModel.$state) { if case .placed = $0 { showConfirmation = true } }
+        .onReceive(viewModel.$state) { state in
+            if case .placed = state {
+                showConfirmation = true
+                Task { await notifications.requestPermissionIfUndetermined() }   // યોગ્ય સમયે permission
+            }
+        }
         .fullScreenCover(isPresented: $showConfirmation) {
             if case .placed(let order) = viewModel.state {
                 OrderConfirmationView(

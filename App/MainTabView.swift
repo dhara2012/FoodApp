@@ -3,6 +3,8 @@ import SwiftUI
 struct MainTabView: View {
     @EnvironmentObject var router: AppRouter
     @EnvironmentObject var profile: ProfileStore
+    @EnvironmentObject var monitor: OrderStatusMonitor
+    @Environment(\.scenePhase) private var scenePhase
     let api: APIClientProtocol
 
     var body: some View {
@@ -21,5 +23,10 @@ struct MainTabView: View {
         }
         .tint(.orange)
         .task { await profile.load() }
+        // App ખુલ્લી હોય ત્યારે જ order status પર નજર
+        .task(id: scenePhase) {
+            if scenePhase == .active { monitor.start() } else { monitor.stop() }
+        }
+        .onDisappear { monitor.stop() }
     }
 }

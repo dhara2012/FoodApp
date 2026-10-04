@@ -43,7 +43,15 @@ private struct OrderHistoryContent: View {
         .navigationBarTitleDisplayMode(.inline)
         .refreshable { await viewModel.load(showSpinner: false) }
         .task { await viewModel.load(); consumeDeepLink() }
-        .onReceive(router.$openOrderID) { _ in consumeDeepLink() }
+        .onReceive(router.$openOrderID) { id in
+            guard let id else { return }
+            Task {
+                if !viewModel.orders.contains(where: { $0.id == id }) {
+                    await viewModel.load(showSpinner: false)      // નવો order list માં ન હોય તો refresh
+                }
+                consumeDeepLink()
+            }
+        }
         .navigationDestination(isPresented: $showDeepLink) {
             if let order = deepLinkOrder { OrderDetailView(order: order) }
         }
