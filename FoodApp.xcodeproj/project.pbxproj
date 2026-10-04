@@ -66,6 +66,17 @@
 		AF3458103071746A0041AF66 /* OrdersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF34580D3071746A0041AF66 /* OrdersViewModel.swift */; };
 		AF3458113071746A0041AF66 /* OrderDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF34580A3071746A0041AF66 /* OrderDetailViewModel.swift */; };
 		AF3458123071746A0041AF66 /* OrderStatus+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF34580C3071746A0041AF66 /* OrderStatus+UI.swift */; };
+		AF345816307179740041AF66 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF345815307179740041AF66 /* MainTabView.swift */; };
+		AF345818307179B50041AF66 /* AvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF345817307179B50041AF66 /* AvatarView.swift */; };
+		AF34581A307179F10041AF66 /* HomeHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF345819307179F10041AF66 /* HomeHeader.swift */; };
+		AF34582430717A860041AF66 /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF34581D30717A860041AF66 /* EditProfileView.swift */; };
+		AF34582530717A860041AF66 /* EditProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF34581E30717A860041AF66 /* EditProfileViewModel.swift */; };
+		AF34582630717A860041AF66 /* ChangePasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF34581C30717A860041AF66 /* ChangePasswordViewModel.swift */; };
+		AF34582730717A860041AF66 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF34582230717A860041AF66 /* ProfileView.swift */; };
+		AF34582830717A860041AF66 /* ProfileRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF34582030717A860041AF66 /* ProfileRepository.swift */; };
+		AF34582930717A860041AF66 /* ProfileStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF34582130717A860041AF66 /* ProfileStore.swift */; };
+		AF34582A30717A860041AF66 /* ChangePasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF34581B30717A860041AF66 /* ChangePasswordView.swift */; };
+		AF34582B30717A860041AF66 /* NotificationSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF34581F30717A860041AF66 /* NotificationSettingsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -148,6 +159,17 @@
 		AF34580B3071746A0041AF66 /* OrderHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderHistoryView.swift; sourceTree = "<group>"; };
 		AF34580C3071746A0041AF66 /* OrderStatus+UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OrderStatus+UI.swift"; sourceTree = "<group>"; };
 		AF34580D3071746A0041AF66 /* OrdersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersViewModel.swift; sourceTree = "<group>"; };
+		AF345815307179740041AF66 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		AF345817307179B50041AF66 /* AvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarView.swift; sourceTree = "<group>"; };
+		AF345819307179F10041AF66 /* HomeHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeader.swift; sourceTree = "<group>"; };
+		AF34581B30717A860041AF66 /* ChangePasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordView.swift; sourceTree = "<group>"; };
+		AF34581C30717A860041AF66 /* ChangePasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordViewModel.swift; sourceTree = "<group>"; };
+		AF34581D30717A860041AF66 /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
+		AF34581E30717A860041AF66 /* EditProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewModel.swift; sourceTree = "<group>"; };
+		AF34581F30717A860041AF66 /* NotificationSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationSettingsView.swift; sourceTree = "<group>"; };
+		AF34582030717A860041AF66 /* ProfileRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileRepository.swift; sourceTree = "<group>"; };
+		AF34582130717A860041AF66 /* ProfileStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileStore.swift; sourceTree = "<group>"; };
+		AF34582230717A860041AF66 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -224,6 +246,7 @@
 				AF2740D43070DF940017C30C /* RootView.swift */,
 				AF2740A93070D33D0017C30C /* FoodAppApp.swift */,
 				AF3458073071742F0041AF66 /* AppRouter.swift */,
+				AF345815307179740041AF66 /* MainTabView.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -328,6 +351,7 @@
 				AF274150307164D10017C30C /* Home */,
 				AF2740BB3070D33D0017C30C /* Auth */,
 				AF2740BD3070D33D0017C30C /* Cart */,
+				AF34582330717A860041AF66 /* Profile */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -335,6 +359,7 @@
 		AF274111307115FA0017C30C /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				AF345817307179B50041AF66 /* AvatarView.swift */,
 				AF2741293071342B0017C30C /* SearchBar.swift */,
 				AF274110307115FA0017C30C /* EmojiTile.swift */,
 				AF274115307124D70017C30C /* FormField.swift */,
@@ -373,6 +398,7 @@
 				AF27414D307164D10017C30C /* HomeRepository.swift */,
 				AF27414E307164D10017C30C /* HomeView.swift */,
 				AF27414F307164D10017C30C /* HomeViewModel.swift */,
+				AF345819307179F10041AF66 /* HomeHeader.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -398,6 +424,21 @@
 				AF274162307166970017C30C /* PaymentService.swift */,
 			);
 			path = Checkout;
+			sourceTree = "<group>";
+		};
+		AF34582330717A860041AF66 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				AF34581B30717A860041AF66 /* ChangePasswordView.swift */,
+				AF34581C30717A860041AF66 /* ChangePasswordViewModel.swift */,
+				AF34581D30717A860041AF66 /* EditProfileView.swift */,
+				AF34581E30717A860041AF66 /* EditProfileViewModel.swift */,
+				AF34581F30717A860041AF66 /* NotificationSettingsView.swift */,
+				AF34582030717A860041AF66 /* ProfileRepository.swift */,
+				AF34582130717A860041AF66 /* ProfileStore.swift */,
+				AF34582230717A860041AF66 /* ProfileView.swift */,
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -552,6 +593,7 @@
 				AF34580E3071746A0041AF66 /* OrderHistoryView.swift in Sources */,
 				AF34580F3071746A0041AF66 /* OrderDetailView.swift in Sources */,
 				AF3458103071746A0041AF66 /* OrdersViewModel.swift in Sources */,
+				AF34581A307179F10041AF66 /* HomeHeader.swift in Sources */,
 				AF3458113071746A0041AF66 /* OrderDetailViewModel.swift in Sources */,
 				AF3458123071746A0041AF66 /* OrderStatus+UI.swift in Sources */,
 				AF27413D3071649B0017C30C /* AddressListView.swift in Sources */,
@@ -590,10 +632,19 @@
 				AF274125307125280017C30C /* ForgotPasswordViewModel.swift in Sources */,
 				AF274126307125280017C30C /* OTPView.swift in Sources */,
 				AF27415C307166540017C30C /* ServiceContainer.swift in Sources */,
+				AF34582430717A860041AF66 /* EditProfileView.swift in Sources */,
+				AF34582530717A860041AF66 /* EditProfileViewModel.swift in Sources */,
+				AF34582630717A860041AF66 /* ChangePasswordViewModel.swift in Sources */,
+				AF34582730717A860041AF66 /* ProfileView.swift in Sources */,
+				AF34582830717A860041AF66 /* ProfileRepository.swift in Sources */,
+				AF34582930717A860041AF66 /* ProfileStore.swift in Sources */,
+				AF34582A30717A860041AF66 /* ChangePasswordView.swift in Sources */,
+				AF34582B30717A860041AF66 /* NotificationSettingsView.swift in Sources */,
 				AF2740C53070D33D0017C30C /* PriceCalculator.swift in Sources */,
 				AF274164307166970017C30C /* PaymentService.swift in Sources */,
 				AF274165307166970017C30C /* CheckoutView.swift in Sources */,
 				AF274166307166970017C30C /* CheckoutViewModel.swift in Sources */,
+				AF345818307179B50041AF66 /* AvatarView.swift in Sources */,
 				AF2740C63070D33D0017C30C /* FoodAppApp.swift in Sources */,
 				AF27410A307100390017C30C /* CartButton.swift in Sources */,
 				AF2740F43070FF450017C30C /* Formatters.swift in Sources */,
@@ -604,6 +655,7 @@
 				AF2740D33070DF780017C30C /* SessionManager.swift in Sources */,
 				AF2740C93070D33D0017C30C /* CartStore.swift in Sources */,
 				AF2740CA3070D33D0017C30C /* Models.swift in Sources */,
+				AF345816307179740041AF66 /* MainTabView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

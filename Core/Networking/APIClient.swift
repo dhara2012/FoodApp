@@ -56,6 +56,10 @@ final class APIClient: APIClientProtocol {
                                           || error.code == .networkConnectionLost
                                           || error.code == .cannotConnectToHost {
             throw NetworkError.noInternet
+        } catch let error as URLError where error.code == .cannotConnectToHost
+                    || error.code == .cannotFindHost
+                    || error.code == .timedOut {
+            throw NetworkError.serverUnreachable
         } catch {
             throw NetworkError.unknown
         }
