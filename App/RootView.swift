@@ -1,10 +1,3 @@
-//
-//  RootView.swift
-//  FoodApp
-//
-//  Created by Shubham Trivedi on 03/10/26.
-//
-
 import SwiftUI
 
 struct RootView: View {
@@ -14,7 +7,7 @@ struct RootView: View {
 
     var body: some View {
         if session.isLoggedIn {
-            HomeView(viewModel: HomeViewModel(repository: HomeRepository(api: api)), api: api)
+            MainTabView(api: api)
         } else {
             let repository = AuthRepository(api: api, tokenStore: tokenStore)
             NavigationStack {

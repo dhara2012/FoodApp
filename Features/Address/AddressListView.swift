@@ -86,23 +86,26 @@ struct AddressListView: View {
     }
 }
 
-/// Home ના ઉપરનું "Deliver to ..." બટન
+/// Home ના ઉપર ડાબે "Deliver to ..." બટન
 struct AddressHeaderButton: View {
     @EnvironmentObject var book: AddressBook
     @State private var show = false
 
     var body: some View {
         Button { show = true } label: {
-            VStack(spacing: 0) {
-                Text("Deliver to").font(.caption2).foregroundColor(.secondary)
-                HStack(spacing: 4) {
-                    Text("📍")
-                    Text(book.selectedAddress.map { "\($0.area), \($0.city)" } ?? "Add address")
-                        .font(.subheadline.bold()).lineLimit(1)
-                    Image(systemName: "chevron.down").font(.caption2)
+            HStack(spacing: 8) {
+                Image(systemName: "mappin.circle.fill").font(.title2).foregroundColor(.orange)
+                VStack(alignment: .leading, spacing: 0) {
+                    Text("Deliver to").font(.caption2).foregroundColor(.secondary)
+                    HStack(spacing: 3) {
+                        Text(book.selectedAddress.map { "\($0.area), \($0.city)" } ?? "Add address")
+                            .font(.subheadline.bold()).lineLimit(1)
+                        Image(systemName: "chevron.down").font(.caption2.bold())
+                    }
                 }
             }
             .foregroundColor(.primary)
+            .frame(maxWidth: 230, alignment: .leading)
         }
         .sheet(isPresented: $show) {
             NavigationStack {

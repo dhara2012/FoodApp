@@ -16,7 +16,7 @@ struct HomeView: View {
         NavigationStack {
             ScrollView {
                 LazyVStack(alignment: .leading, spacing: 20) {
-                    if !viewModel.isFiltering { BannerCarousel() }
+                    if !viewModel.isFiltering { GreetingHeader(); BannerCarousel() }
                     categoryRow
                     if !viewModel.isFiltering && !viewModel.popularItems.isEmpty { popularSection }
                     restaurantsSection
@@ -32,9 +32,8 @@ struct HomeView: View {
             }
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
-                ToolbarItem(placement: .principal) { AddressHeaderButton() }
-                ToolbarItem(placement: .navigationBarLeading) { Button("Logout") { session.logout() } }
-                ToolbarItemGroup(placement: .navigationBarTrailing) { OrdersButton(); CartButton() }
+                ToolbarItem(placement: .navigationBarLeading) { AddressHeaderButton() }
+                ToolbarItemGroup(placement: .navigationBarTrailing) { CartButton(); ProfileAvatarButton() }
             }
             .safeAreaInset(edge: .bottom) { FloatingCartBar() }
             .sheet(item: $viewModel.popularSelection) { selection in
