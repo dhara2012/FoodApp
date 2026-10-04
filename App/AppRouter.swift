@@ -1,14 +1,16 @@
 import Foundation
 import Combine
 
-/// App-wide navigation: order ખોલવા માટે (Confirmation "Track order" અને પછી notification tap)
+enum AppTab: Hashable { case home, orders, profile }
+
+/// App-wide navigation: tab બદલવા અને order ખોલવા (Track order / notification tap)
 @MainActor
 final class AppRouter: ObservableObject {
-    @Published var showOrders = false
+    @Published var selectedTab: AppTab = .home
     @Published var openOrderID: String?
 
     func openOrder(id: String) {
         openOrderID = id
-        showOrders = true
+        selectedTab = .orders
     }
 }

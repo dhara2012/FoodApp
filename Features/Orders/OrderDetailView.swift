@@ -105,18 +105,3 @@ private struct OrderDetailContent: View {
             .font(bold ? .headline : .subheadline).foregroundColor(color)
     }
 }
-
-/// Home ના toolbar નું "My orders" બટન
-struct OrdersButton: View {
-    @EnvironmentObject var router: AppRouter
-
-    var body: some View {
-        Button { router.showOrders = true } label: {
-            Image(systemName: "bag").frame(width: 36, height: 36)
-        }
-        .accessibilityLabel("My orders")
-        .sheet(isPresented: $router.showOrders) {
-            NavigationStack { OrderHistoryView() }
-        }
-    }
-}

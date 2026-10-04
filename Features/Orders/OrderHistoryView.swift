@@ -11,7 +11,6 @@ struct OrderHistoryView: View {
 private struct OrderHistoryContent: View {
     @StateObject var viewModel: OrdersViewModel
     @EnvironmentObject var router: AppRouter
-    @Environment(\.dismiss) private var dismiss
     @State private var deepLinkOrder: Order?
     @State private var showDeepLink = false
 
@@ -42,7 +41,6 @@ private struct OrderHistoryContent: View {
         }
         .navigationTitle("My orders")
         .navigationBarTitleDisplayMode(.inline)
-        .toolbar { ToolbarItem(placement: .navigationBarLeading) { Button("Close") { dismiss() } } }
         .refreshable { await viewModel.load(showSpinner: false) }
         .task { await viewModel.load(); consumeDeepLink() }
         .onReceive(router.$openOrderID) { _ in consumeDeepLink() }
